@@ -1,3 +1,4 @@
+
 .header-nav{
     background-color: aquamarine;
     height: 100px;
@@ -41,4 +42,10 @@
 #beneficios{
     width: 80%;
     justify-self: center;
+}
+
+.form-leads{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
