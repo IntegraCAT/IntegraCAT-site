@@ -48,10 +48,10 @@ A equipe responsável por dar vida ao **IntegraCAT**:
 <br>
 <a href="https://github.com/ricardobatt">Ricardo Batista</a> - Dev Front-end
 <br>
-<a href="https://github.com/juliana15paak">Yasmin Quintino</a> - UX/UI Designer
+<a href="https://github.com/">Yasmin Quintino</a> - UX/UI Designer
 <br>
-<a href="https://github.com/juliana15paak">Hiago Ferreira</a> - UX Designer
+<a href="https://github.com/">Hiago Ferreira</a> - UX Designer
 <br>
-<a href="https://github.com/juliana15paak">Wemia Silva</a> - Scrum Master & Analista
+<a href="https://github.com/">Wemia Silva</a> - Scrum Master & Analista
   
 
