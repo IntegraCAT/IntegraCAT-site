@@ -21,7 +21,7 @@ Modernizar, centralizar e desburocratizar a gestão de Segurança do Trabalho e 
 
 ## 🚀 Objetivos Específicos
 * **Gestão baseada em dados:** Fornecer aos gestores um Dashboard em tempo real com métricas claras (KPIs) para tomada de decisão rápida.
-* * **Digitalizar o chão de fábrica:** Dar voz aos colaboradores através de um aplicativo móvel intuitivo para reporte instantâneo de riscos e quase-acidentes.
+* **Digitalizar o chão de fábrica:** Dar voz aos colaboradores através de um aplicativo móvel intuitivo para reporte instantâneo de riscos e quase-acidentes.
 * **Redução de passivos trabalhistas:** Garantir que a empresa mantenha o *compliance* com as normas do eSocial e da legislação trabalhista brasileira de forma automatizada.
 * **Conexão com especialistas:** Criar uma ponte entre as CIPAs corporativas e os melhores profissionais do mercado (Ergonomistas, Engenheiros de Segurança e Psicólogos Organizacionais) para treinamentos e palestras.
 
