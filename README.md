@@ -10,6 +10,8 @@
 
 # IntegraCAT 🛡️
 
+> 🎓 Projeto de conclusão desenvolvido para a formação de Front-End do **Instituto PROA** em parceria com a **Serasa Experian**.
+
 O **IntegraCAT** é uma plataforma B2B (Business-to-Business) focada em revolucionar a Segurança do Trabalho nas empresas. Através de um ecossistema digital inteligente, conectamos a operação ao setor de gestão (SESMT e RH), eliminando a burocracia do papel e focando na prevenção ativa de acidentes.
 
 ---
@@ -37,3 +39,43 @@ Modernizar, centralizar e desburocratizar a gestão de Segurança do Trabalho e 
 * **Alerta Rápido na Palma da Mão:** Interface simplificada para reportar riscos estruturais, comportamentais ou incidentes direto do smartphone.
 * **Upload de Evidências:** Anexo de fotos em tempo real do local ou do problema reportado.
 * **Acompanhamento de Status:** Feedback visual de que o alerta foi enviado e recebido pela gestão com sucesso.
+
+## 👥 Nossa Equipe
+
+A equipe responsável por dar vida ao **IntegraCAT**:
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/juliana15paak">
+        <img src="https://github.com/juliana15paak.png" width="100px;" alt="Foto da Juliana"/><br>
+        <sub>
+          <b>Juliana Alves</b>
+        </sub>
+      </a>
+      <br>
+      <span>Product Owner & Front-end</span>
+    </td>
+    <td align="center">
+      <a href="https://github.com/USUARIO_DA_YASMIN">
+        <img src="https://github.com/USUARIO_DA_YASMIN.png" width="100px;" alt="Foto da Yasmin"/><br>
+        <sub>
+          <b>Ricardo Batista</b>
+        </sub>
+      </a>
+      <br>
+      <span>UX/UI Designer</span>
+    </td>
+    <td align="center">
+      <a href="https://github.com/USUARIO_DO_HIAGO">
+        <img src="https://github.com/USUARIO_DO_HIAGO.png" width="100px;" alt="Foto do Hiago"/><br>
+        <sub>
+          <b>Hiago</b>
+        </sub>
+      </a>
+      <br>
+      <span>Pesquisa & Conteúdo</span>
+    </td>
+    </tr>
+</table>
+
