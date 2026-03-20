@@ -46,7 +46,7 @@ A equipe responsável por dar vida ao **IntegraCAT**:
 
 <a href="https://github.com/juliana15paak">Juliana Alves</a> - Product Owner & Front-end
 <br>
-<a href="https://github.com/juliana15paak">Ricardo Batista</a> - Dev Front-end
+<a href="https://github.com/ricardobatt">Ricardo Batista</a> - Dev Front-end
 <br>
 <a href="https://github.com/juliana15paak">Yasmin Quintino</a> - UX/UI Designer
 <br>
