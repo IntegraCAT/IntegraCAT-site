@@ -44,38 +44,6 @@ Modernizar, centralizar e desburocratizar a gestão de Segurança do Trabalho e 
 
 A equipe responsável por dar vida ao **IntegraCAT**:
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://github.com/juliana15paak">
-        <img src="https://github.com/juliana15paak.png" width="100px;" alt="Foto da Juliana"/><br>
-        <sub>
-          <b>Juliana Alves</b>
-        </sub>
-      </a>
-      <br>
-      <span>Product Owner & Front-end</span>
-    </td>
-    <td align="center">
-      <a href="https://github.com/USUARIO_DA_YASMIN">
-        <img src="https://github.com/USUARIO_DA_YASMIN.png" width="100px;" alt="Foto da Yasmin"/><br>
-        <sub>
-          <b>Ricardo Batista</b>
-        </sub>
-      </a>
-      <br>
-      <span>UX/UI Designer</span>
-    </td>
-    <td align="center">
-      <a href="https://github.com/USUARIO_DO_HIAGO">
-        <img src="https://github.com/USUARIO_DO_HIAGO.png" width="100px;" alt="Foto do Hiago"/><br>
-        <sub>
-          <b>Hiago</b>
-        </sub>
-      </a>
-      <br>
-      <span>Pesquisa & Conteúdo</span>
-    </td>
-    </tr>
-</table>
+<a href="https://github.com/juliana15paak">Juliana Alves</a> - Product Owner & Front-end
+  
 
