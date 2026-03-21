@@ -1,0 +1,159 @@
+
+header{
+  background: var(--gradient-shadow-blue);
+  height: 80px;
+  width: 100%;
+}
+.header-nav{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.header-nav img{
+  height: 90%;
+}
+
+.header-nav li, .header-nav ul{ 
+  display: inline-block;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.voltar-seta{
+  object-fit: contain;
+  width: 45px;
+}
+
+/*========================================
+Daqui para baixo classes do FOOTER
+==========================================*/
+
+footer {
+  padding-top: 128px;
+  background: var(--gradient-shadow-blue-90);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px; 
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  max-width: 250px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-columns h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-columns ul {
+  list-style: none; 
+  padding: 0;       
+  display: flex;
+  flex-direction: column;
+  gap: 12px;        
+}
+
+.footer-columns a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-columns a:hover {
+  color: var(--gradient-purple); 
+}
+
+small {
+  display: block;
+  text-align: center;
+  padding: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  opacity: 0.6;
+}
+
+/*========================================
+Daqui para baixo classes do btn-green
+==========================================*/
+
+.btn-green {
+  align-self: center;
+  width: fit-content;
+  font-weight: 700;
+  color: black;
+  position: relative; /* Necessário para o ::before */
+  z-index: 1;
+  overflow: hidden;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 0;
+  background-image: var(--gradient-green);
+  cursor: pointer;
+}
+
+/* uma "camada" por cima com o gradiente roxo */
+.btn-green::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--gradient-purple);
+  z-index: -1;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 500ms ease-in-out;
+}
+
+.btn-green:hover::before {
+  opacity: 1;
+}
+
+/*========================================
+Daqui para baixo classes do btn-purple
+==========================================*/
+.btn-purple{
+  align-self: center;
+  width: fit-content;
+  font-weight: 700;
+  position: relative; /* Necessário para o ::before */
+  z-index: 1;
+  overflow: hidden;
+  padding: 16px 42px;
+  border-radius: 15px;
+  border: 0px;
+  background-image: var(--gradient-purple);
+  cursor: pointer;
+  border-bottom: 2px solid var(--color-light-primary);
+}
+
+/* uma "camada" por cima com o gradiente roxo */
+.btn-purple::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--gradient-purple-dark);
+  z-index: -1;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 500ms ease-in-out;
+}
+
+.btn-purple:hover::before {
+  opacity: 1;
+}

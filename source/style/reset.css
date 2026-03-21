@@ -1,7 +1,35 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Inter", sans-serif;
+    color: var(--color-light-primary);
 }
+
+body{
+    background: var(--color-bg-primary);
+}
+
 a {
     text-decoration: none;
+    font-weight: 700;
+}
+
+/* Aplicando em todos os títulos H1, H2 e H3 */
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Negrito para títulos */
+  font-style: normal;
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 20px;
 }

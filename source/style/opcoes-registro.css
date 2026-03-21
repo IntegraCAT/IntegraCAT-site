@@ -1,0 +1,38 @@
+main{
+  justify-items: center;
+  padding: 64px 0px;
+}
+main > h1{
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+
+/*========================================
+Daqui para baixo classes dentro de AUTENTICACAO
+==========================================*/
+#autenticacao{
+  padding: 56px;
+  border-radius: 20px;
+  background: var(--color-bg-secondary);
+  width: 70%;
+  max-width: fit-content;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+
+}
+#autenticacao h1{
+  font-size: 28px;
+}
+
+.container-btn{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-btn > .btn-purple{
+  font-size: 24px;
+}
