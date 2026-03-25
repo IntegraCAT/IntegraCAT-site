@@ -140,10 +140,13 @@ Daqui para baixo classes da seção PALESTRAS
 #palestras{
   background: var(--color-bg-primary);
 }
+#palestras h2{
+  text-align: center;
+}
 .container-especialistas {
   display: flex;
   gap: 24px;
-  padding: 40px;
+  padding: 3rem 0;
   align-items: stretch; /* Garante que os blocos tenham a mesma altura */
 }
 
@@ -229,30 +232,48 @@ Daqui para baixo classes da seção CONTEUDOS que está dentro da seção PALEST
 
 #conteudos h2{
   width: 100%;
-  padding-bottom: 24px;
+  padding-bottom: 3rem;
   text-align: end;
 }
 
 .container-card-conteudos{
   display: flex;
-  gap: 32px;
+  gap: 2rem;
+}
+.container-card-conteudos > .card-conteudo {
+  flex: 1.6;
+}
+.container-card-conteudos__menores{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: flex-end;
+}
+.articles{
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
 }
 
-.container-card-conteudos > div >.card-conteudo{
+.articles > .card-conteudo{
   flex: 1;
 }
 
 .card-conteudo{
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-blue-secondary);
-
-  gap: 32px;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.card-conteudo h3,.card-conteudo h4, .card-conteudo p{
-  padding:  16px;
+.card-conteudo__texts{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.7rem;
+  flex-grow: 1;
 }
 
 .card-conteudo img{
