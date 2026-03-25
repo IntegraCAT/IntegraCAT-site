@@ -10,8 +10,16 @@ main > section{
 Daqui para baixo classes da seção HOME
 ==========================================*/
 #home{
-  padding-top: 140px;
+  padding-top: 8rem;
+  min-height: 90vh;
+  gap: 3rem;
   background: var(--gradient-shadow-blue-90);
+}
+.home__texts{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 #home h1, #home p{
   max-width: 700px;
@@ -21,9 +29,8 @@ Daqui para baixo classes da seção HOME
 .container-images-home{
   margin-top: 40px;
   display: flex;
-  gap: 10PX;
+  gap: 1rem;
   width: 100%;
-
   justify-content: center;
   align-items: end;
 }
