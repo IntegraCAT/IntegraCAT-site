@@ -305,15 +305,21 @@ Daqui para baixo classes da seção PRECOS
   padding: 2rem;
   display: flex;
   flex-direction: column; 
-  gap: 1.5rem;
+  gap: 1rem;
   border-radius: 20px;
 }
 .card-precos:nth-child(2){
   background: var(--gradient-purple);
 }
 
+#precos .btn-green {
+  width: 100%;
+  align-self: stretch; /* Isso anula o align-self: center da classe original */
+}
 .card-precos ul {
-  padding: 16px;
+  padding: 0 1rem;
+  line-height: 1.75;
+  font-weight: 600;
   flex-grow: 1; /* Faz a lista "esticar" para empurrar o botão para o rodapé */
 }
 
