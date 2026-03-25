@@ -33,3 +33,18 @@ h3{
 h4{
     font-size: 20px;
 }
+
+button{
+    color: blueviolet;
+}
+
+.visually-hidden {
+    position: absolute; /* Remove o elemento do fluxo normal */
+    width: 1px;        /* Tamanho mínimo para manter o espaço */
+    height: 1px;       /* Tamanho mínimo para manter o espaço */
+    margin: -1px;      /* Retira qualquer margem */
+    padding: 0;        /* Remove padding */
+    overflow: hidden;   /* Oculta qualquer excesso de conteúdo */
+    clip: rect(0, 0, 0, 0); /* Para esconder visualmente */
+    border: 0;         /* Remove bordas */
+}

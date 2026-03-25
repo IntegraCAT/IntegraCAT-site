@@ -107,6 +107,7 @@ Daqui para baixo classes do btn-green
   border-radius: 50px;
   border: 0;
   background-image: var(--gradient-green);
+  border-bottom: 2px solid var(--color-light-primary);
   cursor: pointer;
 }
 
@@ -132,15 +133,17 @@ Daqui para baixo classes do btn-purple
   align-self: center;
   width: fit-content;
   font-weight: 700;
+  color: black;
   position: relative; /* Necessário para o ::before */
   z-index: 1;
   overflow: hidden;
-  padding: 16px 42px;
-  border-radius: 15px;
-  border: 0px;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 0;
   background-image: var(--gradient-purple);
-  cursor: pointer;
   border-bottom: 2px solid var(--color-light-primary);
+  cursor: pointer;
+  color: var(--color-light-primary);
 }
 
 /* uma "camada" por cima com o gradiente roxo */
@@ -155,5 +158,38 @@ Daqui para baixo classes do btn-purple
 }
 
 .btn-purple:hover::before {
+  opacity: 1;
+}
+/*========================================
+Daqui para baixo classes do btn-red
+==========================================*/
+.btn-red {
+  align-self: center;
+  width: fit-content;
+  font-weight: 700;
+  color: black;
+  position: relative; /* Necessário para o ::before */
+  z-index: 1;
+  overflow: hidden;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 0;
+  background: var(--color-red);
+  border-bottom: 2px solid var(--color-light-primary);
+  cursor: pointer;
+}
+
+/* uma "camada" por cima com o gradiente roxo */
+.btn-red::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--gradient-purple);
+  z-index: -1;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 500ms ease-in-out;
+}
+
+.btn-red:hover::before {
   opacity: 1;
 }
