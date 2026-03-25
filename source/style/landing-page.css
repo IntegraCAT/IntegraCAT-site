@@ -1,5 +1,5 @@
 main > section{
-  padding: 10%;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ Daqui para baixo classes da seção BENEFICIOS
 .container-card-beneficios{
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .card-beneficios {
@@ -72,8 +72,8 @@ Daqui para baixo classes da seção BENEFICIOS
   border-radius: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-
+  gap: 1.5rem;
+  padding: 2rem 2rem 0 2rem;
   overflow: hidden; 
   flex: 1;
   /* ajusta e mantem o tamanho minimo usado no wrap */
@@ -86,14 +86,13 @@ Daqui para baixo classes da seção BENEFICIOS
   gap: 10px;
 }
 
-.card-beneficios-title, 
-.card-beneficios p {
-  padding: 16px 16px 0 16px;
+.card-beneficios p{
+  text-align: center;
 }
 
 .card-beneficios > img{
   width: 100%;
-  height: 185px;
+  height: 150px;
   object-fit: cover;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -118,7 +117,7 @@ Daqui para baixo classes da seção SISTEMA
   z-index: 2; 
 }
 .informacao-sistemas p{
-  padding: 16px 0px;
+  padding: 2rem 0px;
 }
 
 .informacao-sistemas > div{
