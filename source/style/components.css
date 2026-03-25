@@ -14,16 +14,21 @@ header{
   width: 100%;
   top: 0;
   z-index: 3;
+  transition: transform 0.3s ease-in-out;
 }
-
+.header-nav--escondido {
+  transform: translateY(-100%); 
+}
 .header-nav img{
   height: 90%;
 }
-
+.header-nav a{
+  font-weight: 500;
+}
 .header-nav li, .header-nav ul{ 
   display: inline-block;
   text-align: center;
-  padding: 0px 10px;
+  padding: 0 1rem;
 }
 
 .voltar-seta{

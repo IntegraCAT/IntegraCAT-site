@@ -1,0 +1,17 @@
+let ultimoScroll = 0; 
+const headerNav = document.querySelector('.header-nav');
+
+window.addEventListener('scroll', () => {
+  // Pega a posição atual do scroll da tela
+  const scrollAtual = window.scrollY;
+  // Verifica se rolou para baixo E se já passou da altura do header (80px)
+  if (scrollAtual > ultimoScroll && scrollAtual > 80) {
+    // Rolou pra baixo: esconde o menu
+    headerNav.classList.add('header-nav--escondido');
+  } else {
+    // Rolou pra cima: mostra o menu
+    headerNav.classList.remove('header-nav--escondido');
+  }
+  // Atualiza a última posição para a próxima verificação
+  ultimoScroll = scrollAtual;
+});
