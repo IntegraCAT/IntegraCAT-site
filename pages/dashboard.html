@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/source/style/reset.css" />
+    <link rel="stylesheet" href="/source/style/variables.css" />
+    <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
+    <link rel="stylesheet" href="/source/style/components.css" />
+    
+    <link rel="shortcut icon" href="/source/img/logo integraCAT-nolet.svg" type="image/x-icon">
+
+    <title>Dashboard - integraCAT</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar-nav">
+        <div class="title-logo">
+          <img src="/source/img/logo integraCAT-nolet.svg" alt="logo - IntegraCAT" />
+          <img
+            src="/source/img/lettering integraCAT.svg"
+            alt="letreiro - IntegraCAT"
+          />
+          <button>
+            <img
+              src="/source/img/icons/backArrow2.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <ul>
+          <li>
+            <a href="/pages/dashboard.html">
+              <img
+                src="/source/img/icons/dashboard-icons/dashboard-icon.svg"
+                alt="dashboard-icon"
+              />
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/dashboard-historico.html">
+              <img
+                src="/source/img/icons/dashboard-icons/historic-icon.svg"
+                alt="historico-icon"
+              />
+              <p>Histórico de Ocorrências</p>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/dashboard-criarOcorrencia.html">
+              <img
+                src="/source/img/icons/dashboard-icons/create-icon.svg"
+                alt="criar-icon"
+              />
+              <p>Criar Ocorrências</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="/source/img/icons/dashboard-icons/lecture-icon.svg"
+                alt="palestras-icon"
+              />
+              <p>Palestras</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="/source/img/icons/dashboard-icons/content-icon.svg"
+                alt="conteudos-icon"
+              />
+              <p>Conteúdos</p>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/dashboard-configuracoes.html">
+              <img
+                src="/source/img/icons/dashboard-icons/config-icon.svg"
+                alt="configuracaes-icon"
+              />
+              <p>Configurações</p>
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <img
+                src="/source/img/icons/dashboard-icons/leave-icon.svg"
+                alt="sair-icon"
+              />
+              <p>Sair da Conta</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main class="content">
+        <h1>Bem-vindo à Página</h1>
+
+        <section class="container-card-alert">
+          <h2 class="visually-hidden">Resumo de Segurança</h2>
+
+          <article class="card-alert">
+            <p>72</p>
+            <h3>Dias sem acidentes</h3>
+          </article>
+          <article class="card-alert">
+            <p>02</p>
+            <h3>Alertas recebidos</h3>
+          </article>
+          <article class="card-alert">
+            <p>Baixo</p>
+            <h3>Nível de risco atual</h3>
+          </article>
+          <article class="card-alert">
+            <p>01</p>
+            <h3>Treinamentos Vencendo</h3>
+          </article>
+        </section>
+
+        <section class="container-card-grafico">
+          <h2 class="visually-hidden">Graficos de Segurança</h2>
+
+          <article class="card-grafico">
+            <h3>Ocorrências por Setor</h3>
+          </article>
+          <article class="card-grafico">
+            <h3>Alertas nos últimos 6 meses</h3>
+          </article>
+        </section>
+
+        <section id="section-resume">
+
+          <h2>Alertas Recebidos</h2>
+          <article>
+            <h3>Título da ocorrência</h3>
+            <div class="infos-resume-basic">
+              <p>Nivel da ocorrência: Alto, Médio, Baixo.</p>
+              <p>Setor: Produção.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque beatae ad nostrum ipsum eaque quis labore voluptatum ab nulla, id amet quae molestias illum debitis asperiores aperiam cumque similique accusantium?</p>
+          </article>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
