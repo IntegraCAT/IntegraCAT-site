@@ -109,6 +109,7 @@ Daqui para baixo classes do btn-green
   background-image: var(--gradient-green);
   border-bottom: 2px solid var(--color-light-primary);
   cursor: pointer;
+  transition: color 500ms ease-in-out;
 }
 
 /* uma "camada" por cima com o gradiente roxo */
@@ -121,7 +122,9 @@ Daqui para baixo classes do btn-green
   opacity: 0; /* Começa invisível */
   transition: opacity 500ms ease-in-out;
 }
-
+.btn-green:hover{
+  color: #ffffff;
+}
 .btn-green:hover::before {
   opacity: 1;
 }
@@ -144,6 +147,8 @@ Daqui para baixo classes do btn-purple
   border-bottom: 2px solid var(--color-light-primary);
   cursor: pointer;
   color: var(--color-light-primary);
+  transition: color 500ms ease-in-out;
+
 }
 
 /* uma "camada" por cima com o gradiente roxo */
@@ -159,6 +164,9 @@ Daqui para baixo classes do btn-purple
 
 .btn-purple:hover::before {
   opacity: 1;
+}
+.btn-purple:hover{
+  color: #ffffff;
 }
 /*========================================
 Daqui para baixo classes do btn-red

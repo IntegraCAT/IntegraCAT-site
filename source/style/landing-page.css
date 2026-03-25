@@ -286,11 +286,12 @@ Daqui para baixo classes da seção PRECOS
 ==========================================*/
 #precos{
   background: var(--color-bg-primary);
+  gap: 2rem;
 }
 .container-card-precos {
   display: flex; /* Coloca um ao lado do outro */
   flex-direction: row;
-  gap: 20px; 
+  gap: 2rem; 
   align-items: stretch; /* FORÇA todos os cards a terem a altura do maior */
   justify-content: center;
   width: 100%;
@@ -301,10 +302,10 @@ Daqui para baixo classes da seção PRECOS
   max-width: 495px;
   background: var(--gradient-shadow-blue-90);
   border: 1px solid var(--color-blue-secondary);
-  padding: 16px;
+  padding: 2rem;
   display: flex;
   flex-direction: column; 
-  gap: 24px;
+  gap: 1.5rem;
   border-radius: 20px;
 }
 .card-precos:nth-child(2){
