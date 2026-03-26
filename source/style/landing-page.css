@@ -59,7 +59,7 @@ Daqui para baixo classes da seção BENEFICIOS
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  padding-bottom: 32px;
+  padding-bottom: 3rem;
 }
 .beneficios-descricao > div{
   display: flex;
@@ -155,6 +155,7 @@ Daqui para baixo classes da seção PALESTRAS
   gap: 24px;
   padding: 3rem 0;
   align-items: stretch; /* Garante que os blocos tenham a mesma altura */
+  flex-wrap: wrap;
 }
 
 /* O card da esquerda ocupa 1 parte */
