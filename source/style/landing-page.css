@@ -302,6 +302,7 @@ Daqui para baixo classes da seção PRECOS
   align-items: stretch; /* FORÇA todos os cards a terem a altura do maior */
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .card-precos {

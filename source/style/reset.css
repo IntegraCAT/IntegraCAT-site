@@ -48,3 +48,22 @@ button{
     clip: rect(0, 0, 0, 0); /* Para esconder visualmente */
     border: 0;         /* Remove bordas */
 }
+
+/*========================================
+RESPONSIVIDADE
+=========================================*/
+
+@media (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+}
