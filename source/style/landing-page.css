@@ -246,24 +246,26 @@ Daqui para baixo classes da seção CONTEUDOS que está dentro da seção PALEST
 .container-card-conteudos{
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .container-card-conteudos > .card-conteudo {
-  flex: 1.6;
+  flex: 1.6 1 350px;
 }
 .container-card-conteudos__menores{
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 2 1 350px;
   justify-content: flex-end;
 }
 .articles{
   display: flex;
   gap: 2rem;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .articles > .card-conteudo{
-  flex: 1;
+  flex: 1 1 250px;
 }
 
 .card-conteudo{
