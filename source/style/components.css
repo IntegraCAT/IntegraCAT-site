@@ -8,6 +8,7 @@ header{
   display: none;
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 .header-nav{
   height: 80px;
@@ -242,6 +243,10 @@ RESPONSIVIDADE
   .menu{
     display: flex;
   }
+  .header-nav{
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
   .header-nav ul{
     position: absolute;
     top: 80px;
@@ -259,6 +264,10 @@ RESPONSIVIDADE
   }
   .header-nav ul.menu-aberto{
     display: flex;
+  }
+  .header-nav ul > .btn-green{
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
   }
 }
 

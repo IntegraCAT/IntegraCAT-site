@@ -1,3 +1,5 @@
+// ================= SCROLL REVIEW =================
+
 let ultimoScroll = 0; 
 const headerNav = document.querySelector('.header-nav');
 
@@ -14,4 +16,15 @@ window.addEventListener('scroll', () => {
   }
   // Atualiza a última posição para a próxima verificação
   ultimoScroll = scrollAtual;
+});
+
+
+//===================== MENU =====================
+
+const btnMenu = document.querySelector('.menu');
+const menuLista = document.querySelector('.header-nav ul');
+
+btnMenu.addEventListener('click', () => {
+  // se a classe não existe, o toggle coloca. Se existe, ele tira.
+  menuLista.classList.toggle('menu-aberto');
 });
