@@ -11,10 +11,11 @@ header{
   background: transparent;
 }
 .header-nav{
-  height: 80px;
   display: flex;
+  justify-content: space-between;
+  height: 80px;
   align-items: center;
-  justify-content:space-around;
+  padding: 0 4%;
   font-weight: 600;
   position: fixed;
   width: 100%;
@@ -26,12 +27,16 @@ header{
   transform: translateY(-100%); 
 }
 .header-nav img{
+  justify-self: start;
   height: 90%;
 }
-.header-nav li, .header-nav ul{ 
-  display: inline-block;
-  text-align: center;
-  padding: 0 1rem;
+.header-nav ul { 
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-nav li {
+  display: block;
 }
 .header-nav a{
   font-weight: 500;
@@ -52,8 +57,11 @@ header{
 .header-nav a:hover::after{
   transform: scaleX(1);
 }
-.header-nav ul > .btn-green{
+.btn-desktop{
   padding: 0.8rem 2rem;
+}
+.btn-mobile{
+  display: none;
 }
 .voltar-seta{
   object-fit: contain;
@@ -243,8 +251,15 @@ RESPONSIVIDADE
   .menu{
     display: flex;
   }
+  .btn-desktop{
+    display: none;
+  }
+  .btn-mobile{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem auto 0 auto;
+  }
   .header-nav{
-    justify-content: space-between;
     padding: 0 2rem;
   }
   .header-nav ul{
@@ -256,18 +271,18 @@ RESPONSIVIDADE
     flex-direction: column;
     padding: 2rem 0;
     display: none;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
   }
   .header-nav li{
     display: block;
     width: 100%;
     padding: 1rem 0;
+    text-align: center;
   }
   .header-nav ul.menu-aberto{
     display: flex;
-  }
-  .header-nav ul > .btn-green{
-    padding: 0.7rem 1.5rem;
-    margin-top: 1rem;
   }
 }
 

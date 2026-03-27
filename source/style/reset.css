@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: "Inter", sans-serif;
     color: var(--color-light-primary);
+    box-sizing: border-box;
 }
 
 body{
