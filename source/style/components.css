@@ -89,6 +89,10 @@ footer {
   max-width: 250px;
 }
 
+.footer-logo img{
+  width: 200px;
+}
+
 .footer-columns {
   display: flex;
   gap: 60px;
