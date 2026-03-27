@@ -115,9 +115,9 @@ Daqui para baixo classes da seção SISTEMA
 .visao-sistemas {
   display: flex; /*texto e imagem lado a lado*/
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   position: relative;
-  padding: 32px;
+  padding: 3rem;
 }
 
 .informacao-sistemas {
@@ -134,8 +134,12 @@ Daqui para baixo classes da seção SISTEMA
   max-width: 70%;
 
 }
-
-.visao-sistemas img {
+.img-mockup-dash{
+  max-width: 50%; /* ajuste conforme necessário */
+  height: auto;
+  filter: drop-shadow(0 0 59px var(--color-blue-primary));
+}
+.img-mockup-app{
   max-width: 50%; /* ajuste conforme necessário */
   height: auto;
   filter: drop-shadow(0 0 59px var(--color-blue-primary));
@@ -408,6 +412,7 @@ RESPONSIVIDADE
 
   .visao-sistemas{
     flex-direction: column;
+    padding: 1.5rem;
   }
   .informacao-sistemas{
     display: flex;
@@ -415,6 +420,20 @@ RESPONSIVIDADE
   }
   .informacao-sistemas div{
     flex-direction: column;
+  }
+  .informacao-sistemas > div > p{
+    max-width: 100%;
+  }
+  .img-mockup-dash{
+    max-width: 100%; 
+  }
+  .img-mockup-app{
+    max-width: 70%;
+    order: 2;
+  }
+
+  #conteudos h2{
+    text-align: center;
   }
 
   #leads{
