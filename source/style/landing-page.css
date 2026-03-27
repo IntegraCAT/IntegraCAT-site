@@ -64,7 +64,7 @@ Daqui para baixo classes da seção BENEFICIOS
 .beneficios-descricao > div{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5rem;
   max-width: 70%;
 }
 
@@ -362,6 +362,7 @@ Daqui para baixo classes da seção LEADS
   display: flex;
   gap: 2rem;
   margin-bottom: 15px; 
+  flex-wrap: wrap;
 }
 
 .form-row:last-child div:first-child{
@@ -386,4 +387,43 @@ Daqui para baixo classes da seção LEADS
   outline: none;/* Remove borda*/
   width: 100%;
   transition: border-bottom-color 0.3s ease;
+}
+
+/*========================================
+RESPONSIVIDADE
+=========================================*/
+
+@media (max-width: 768px){
+  main > section{
+    padding: 4rem 3rem;
+  }
+  .beneficios-descricao{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .beneficios-descricao > div{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .visao-sistemas{
+    flex-direction: column;
+  }
+  .informacao-sistemas{
+    display: flex;
+    flex-direction: column;
+  }
+  .informacao-sistemas div{
+    flex-direction: column;
+  }
+
+  #leads{
+    padding: 3rem;
+  }
+  .form-row:last-child div:first-child{
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+  }
 }
