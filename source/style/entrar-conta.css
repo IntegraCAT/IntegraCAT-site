@@ -41,8 +41,10 @@ Daqui para baixo classes dentro de AUTENTICACAO
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
 }
 .container-opcoes div{
   width: 100%;
@@ -50,8 +52,8 @@ Daqui para baixo classes dentro de AUTENTICACAO
 
 .auth-form input{
   width: 100%;
-  padding: 8px;
-  margin: 16px 0px;
+  padding: 0.5rem;
+  margin: 1rem 0;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid var(--color-light-primary); 
