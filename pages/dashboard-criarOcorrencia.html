@@ -114,30 +114,32 @@
         </ul>
       </nav>
       <main class="content">
-        <div>
+        <div class="title-header">
           <h1>Criar Ocorrência</h1>
           <a href="">← Voltar</a>
         </div>
 
         <section class="content-section">
           <h2 class="visually-hidden">Ocorrência</h2>
-          <section>
+          <section class="conteiner-nova-ocorrencia">
             <h3>Nova Ocorrência</h3>
-            <form class="ocorrencia">
+            <form class="form-ocorrencia">
               <div class="form-section">
                 <h4>Dados do Colaborador</h4>
-                <label>Nome do Colaborador</label>
-                <input type="text" placeholder="Nome..." />
+                <div class="campo">
+                  <label>Nome do Colaborador</label>
+                  <input type="text" placeholder="Nome..." />
+                </div>
               </div>
 
               <div class="form-section">
                 <h4>Dados do Fato</h4>
                 <div class="form-row">
-                  <div>
+                  <div class="campo">
                     <label>Data</label>
                     <input type="date" placeholder="DD/MM/AA" />
                   </div>
-                  <div>
+                  <div class="campo">
                     <label>Horário</label>
                     <input type="time" placeholder="HH:MM" />
                   </div>
@@ -146,11 +148,13 @@
 
               <div class="form-section">
                 <h4>Detalhes</h4>
-                <label>Descrição</label>
-                <textarea placeholder="Descrição..."></textarea>
+                <div class="campo-textarea">
+                  <label>Descrição</label>
+                  <textarea placeholder="Descrição..."></textarea>
+                </div>
 
                 <div class="form-row">
-                  <div>
+                  <div class="campo">
                     <label for="setor">Setor</label>
                     <select id="setor" name="setor">
                       <option value="" disabled selected>
@@ -169,7 +173,7 @@
                       </option>
                     </select>
                   </div>
-                  <div>
+                  <div class="campo">
                     <label for="tipo">Tipo da Ocorrência</label>
                     <select id="tipo" name="tipo">
                       <option value="" disabled selected>
@@ -196,20 +200,19 @@
                       </option>
                     </select>
                   </div>
-
-                  <div>
-                    <label>Nível da ocorrência</label>
-                    <select>
-                      <option value="" disabled selected>
-                        Selecione o Nível da ocorrência...
-                      </option>
-                      <option>Alto</option>
-                      <option>Médio</option>
-                      <option>Baixo</option>
-                    </select>
-                  </div>
                 </div>
 
+                <div>
+                  <label>Nível da ocorrência</label>
+                  <select>
+                    <option value="" disabled selected>
+                      Selecione o Nível da ocorrência...
+                    </option>
+                    <option>Alto</option>
+                    <option>Médio</option>
+                    <option>Baixo</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-section">
