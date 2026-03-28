@@ -61,9 +61,10 @@ main{
   font-size: 24px;
 }
 #grafico-alertas {
-  height: 150px;
   max-width: 300px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
   --primary-axis-color: #fff;
 }
 #grafico-alertas th {
@@ -71,6 +72,34 @@ main{
   font-weight: normal;
   font-size: 0.8rem;
 }
+
+.container-pizza{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#grafico-pizza{
+  height: 150px;
+  width: 150px;
+  margin: 0;
+}
+.legenda-pizza{
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.legenda-pizza span:first-child{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.cor-producao { background-color: #1a1b41; }
+.cor-logistica { background-color: #21308a; }
+.cor-escritorio { background-color: #00a4b4; }
 
 #section-resume{
   padding: 2rem;

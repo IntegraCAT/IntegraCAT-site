@@ -141,6 +141,30 @@
 
           <article class="card-grafico">
             <h3>Ocorrências por Setor</h3>
+            
+            <div class="container-pizza">
+              
+              <table class="charts-css pie multiple hide-data" id="grafico-pizza">
+                <tbody>
+                  <tr>
+                    <td id="fatia-producao" style="--color: #1a1b41;"></td>
+                  </tr>
+                  <tr>
+                    <td id="fatia-logistica" style="--color: #21308a;"></td>
+                  </tr>
+                  <tr>
+                    <td id="fatia-escritorio" style="--color: #00a4b4;"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <ul class="legenda-pizza">
+                <li><span class="cor-producao"></span> <span id="texto-producao"> 40%</span> Produção</li>
+                <li><span class="cor-logistica"></span> <span id="texto-logistica"> 30%</span> Logística</li>
+                <li><span class="cor-escritorio"></span> <span id="texto-escritorio"> 30%</span> Escritório</li>
+              </ul>
+
+            </div>
           </article>
           <article class="card-grafico">
             <h3>Alertas nos últimos 6 meses</h3>
@@ -190,5 +214,6 @@
       </main>
     </div>
     <script src="../source/js/card-alert.js"></script>
+    <script src="../source/js/graficos.js"></script>
   </body>
 </html>
