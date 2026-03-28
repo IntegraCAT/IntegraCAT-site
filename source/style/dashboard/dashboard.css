@@ -192,6 +192,11 @@ main{
   background-color: var(--color-bg-secondary);
   width: 100%;
 }
+.container-search{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .search-bar{
   display: flex;
   gap: 1rem;
@@ -202,6 +207,45 @@ main{
   border: none;
   cursor: pointer;
 }
+.filtros-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.filtros-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.campo{
+  flex: 1;
+}
+
+
+#resultados{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.result-header{
+  display: flex;
+  justify-content: space-between;
+}
+.resultado-grid{
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-light-primary);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 4px #ffffff6d;
+}
+.result-row{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1
+}
+
 /*=========================================
     Daqui para baixo itens da dashboard => CONFIGURAÇÕES
 =========================================*/

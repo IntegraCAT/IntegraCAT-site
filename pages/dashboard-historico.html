@@ -127,82 +127,85 @@
             </div>
 
             <div class="filtros-grid">
-              <div class="campo">
-                <label>Período</label>
-                <select>
-                  <option>Neste Mês</option>
-                  <option>Neste Semestre</option>
-                  <option>Neste Ano</option>
-                  <option>Todos</option>
-                </select>
-              </div>
-
-              <div class="campo">
-                <label for="setor">Setor</label>
-                <select id="setor" name="setor">
-                  <option value="" disabled selected>
-                    Selecione o setor...
-                  </option>
-                  <option value="adm">Administrativo / Escritório</option>
-                  <option value="logistica">Entregas / Logística</option>
-                  <option value="producao">Linha de Produção / Fábrica</option>
-                  <option value="manutencao">Manutenção / Oficina</option>
-                  <option value="limpeza">Serviços Gerais / Limpeza</option>
-                  <option value="ti">TI / Infraestrutura</option>
-                  <option value="externo">Campo / Operações Externas</option>
-                </select>
-              </div>
-
-              <div class="campo">
-                <label>Nível da ocorrência</label>
-                <select>
-                  <option value="" disabled selected>
-                    Selecione o Nível da ocorrência...
-                  </option>
-                  <option>Alto</option>
-                  <option>Médio</option>
-                  <option>Baixo</option>
-                </select>
-              </div>
-
-              <div class="campo">
+              <div class="filtros-row">
                 <div class="campo">
-                  <label for="tipo">Tipo da Ocorrência</label>
-                  <select id="tipo" name="tipo">
+                  <label>Período</label>
+                  <select>
+                    <option>Neste Mês</option>
+                    <option>Neste Semestre</option>
+                    <option>Neste Ano</option>
+                    <option>Todos</option>
+                  </select>
+                </div>
+                
+                <div class="campo">
+                  <label for="setor">Setor</label>
+                  <select id="setor" name="setor">
                     <option value="" disabled selected>
-                      Selecione o tipo...
+                      Selecione o setor...
                     </option>
-                    <option value="acidente_com_afastamento">
-                      Acidente com Afastamento
-                    </option>
-                    <option value="acidente_sem_afastamento">
-                      Acidente sem Afastamento
-                    </option>
-                    <option value="incidente_quase_acidente">
-                      Incidente (Quase Acidente)
-                    </option>
-                    <option value="trajeto">Acidente de Trajeto</option>
-                    <option value="doenca_ocupacional">
-                      Doença Ocupacional
-                    </option>
-                    <option value="primeiros_socorros">
-                      Atendimento de Primeiros Socorros
-                    </option>
-                    <option value="risco_ambiental">
-                      Risco Ambiental / Vazamento
-                    </option>
+                    <option value="adm">Administrativo / Escritório</option>
+                    <option value="logistica">Entregas / Logística</option>
+                    <option value="producao">Linha de Produção / Fábrica</option>
+                    <option value="manutencao">Manutenção / Oficina</option>
+                    <option value="limpeza">Serviços Gerais / Limpeza</option>
+                    <option value="ti">TI / Infraestrutura</option>
+                    <option value="externo">Campo / Operações Externas</option>
                   </select>
                 </div>
               </div>
 
-              <div class="campo status">
+              <div class="filtros-row">
+
+                <div class="campo">
+                  <label>Nível da ocorrência</label>
+                  <select>
+                    <option value="" disabled selected>
+                      Selecione o Nível da ocorrência...
+                    </option>
+                    <option>Alto</option>
+                    <option>Médio</option>
+                    <option>Baixo</option>
+                  </select>
+                </div>
+                
+                <div class="campo">
+                    <label for="tipo">Tipo da Ocorrência</label>
+                    <select id="tipo" name="tipo">
+                      <option value="" disabled selected>
+                        Selecione o tipo...
+                      </option>
+                      <option value="acidente_com_afastamento">
+                        Acidente com Afastamento
+                      </option>
+                      <option value="acidente_sem_afastamento">
+                        Acidente sem Afastamento
+                      </option>
+                      <option value="incidente_quase_acidente">
+                        Incidente (Quase Acidente)
+                      </option>
+                      <option value="trajeto">Acidente de Trajeto</option>
+                      <option value="doenca_ocupacional">
+                        Doença Ocupacional
+                      </option>
+                      <option value="primeiros_socorros">
+                        Atendimento de Primeiros Socorros
+                      </option>
+                      <option value="risco_ambiental">
+                        Risco Ambiental / Vazamento
+                      </option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="campo">
                 <label>Status</label>
                 <select>
                   <option value="" disabled selected>
                       Selecione o Status...
                     </option>
                   <option value="aberto">Aberto</option>
-                  <option value="fechado">Fechado<</option>
+                  <option value="fechado">Fechado</option>
                 </select>
               </div>
             </div>
@@ -210,27 +213,31 @@
             <button class="btn-green">PESQUISAR</button>
           </div>
 
-          <section class="resultados">
+          <section id="resultados">
             <h3>Resultados</h3>
             <div id="container-resultados">
-              <section class="resultado">
-                <div>
+              <article class="card-resultado">
+                <div class="result-header">
                   <h4>Título do Resultados</h4>
                   <a href="">Ver</a>
                 </div>
                 <div class="resultado-grid">
-                  <p><b>Colaborador:</b> John Fulano</p>
-                  <p><b>Setor:</b> Entrega</p>
-                  <p><b>Tipo:</b> Acidente</p>
-                  <p><b>Data:</b> DD/MM/AAAA</p>
-                  <p><b>Nivel da ocorrência:</b> Alto, Médio ou Baixo</p>
-                  <p><b>Status:</b> Aberto</p>
+                  <div class="result-row">
+                    <p><b>Colaborador:</b> John Fulano</p>
+                    <p><b>Setor:</b> Entrega</p>
+                    <p><b>Tipo:</b> Acidente</p>
+                  </div>
+                  <div class="result-row">
+                    <p><b>Data:</b> DD/MM/AAAA</p>
+                    <p><b>Nivel da ocorrência:</b> Alto, Médio ou Baixo</p>
+                    <p><b>Status:</b> Aberto</p>
+                  </div>
                 </div>
                 <div>
                   <h4>Descrição resumida:</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum maxime obcaecati doloremque illum amet vitae quae, odit aliquid repellat saepe cumque, adipisci reprehenderit quas soluta magnam dolores error laboriosam!</p>
                 </div>
-              </section>
+              </article>
             </div>
           </section>
         </section>
