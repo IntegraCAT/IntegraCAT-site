@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
     <link rel="stylesheet" href="/source/style/reset.css" />
     <link rel="stylesheet" href="/source/style/variables.css" />
     <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
@@ -142,6 +144,35 @@
           </article>
           <article class="card-grafico">
             <h3>Alertas nos últimos 6 meses</h3>
+            
+            <table class="charts-css column hide-data show-primary-axis show-labels data-spacing-10" id="grafico-alertas">
+              <tbody>
+                <tr>
+                  <th scope="row">Out</th>
+                  <td style="--size: 0.4; background-image: var(--gradient-green);"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Nov</th>
+                  <td style="--size: 0.7; background-image: var(--gradient-green);"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dez</th>
+                  <td style="--size: 1.0; background-image: var(--gradient-green);"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Jan</th>
+                  <td style="--size: 0.6; background-image: var(--gradient-green);"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Fev</th>
+                  <td style="--size: 0.4; background-image: var(--gradient-green);"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Mar</th>
+                  <td style="--size: 0.2; background-image: var(--gradient-green);"></td>
+                </tr>
+              </tbody>
+            </table>
           </article>
         </section>
 

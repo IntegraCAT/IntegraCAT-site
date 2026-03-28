@@ -48,17 +48,28 @@ main{
 }
 
 .card-grafico{
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 32px;
-
   flex: 1;
-
   border-radius: 20px;
-
+  gap: 2rem;
   background: var(--color-bg-secondary);
 }
 .card-grafico h3{
   font-size: 24px;
+}
+#grafico-alertas {
+  height: 150px;
+  max-width: 300px;
+  margin: 0 auto;
+  --primary-axis-color: #fff;
+}
+#grafico-alertas th {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 0.8rem;
 }
 
 #section-resume{
