@@ -129,11 +129,9 @@ Daqui para baixo classes da seção SISTEMA
 
 .informacao-sistemas > div{
   display: flex;
+  flex-direction: column;
 }
-.informacao-sistemas > div > p{
-  max-width: 70%;
 
-}
 .img-mockup-dash{
   max-width: 50%; /* ajuste conforme necessário */
   height: auto;
@@ -374,7 +372,8 @@ Daqui para baixo classes da seção LEADS
 }
 
 .form-group {
-  width: 50%;
+  flex: 1;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
 }
