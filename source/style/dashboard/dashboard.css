@@ -101,6 +101,31 @@ main{
 .cor-logistica { background-color: #21308a; }
 .cor-escritorio { background-color: #00a4b4; }
 
+/* ==========================================
+   ANIMAÇÃO DO GRÁFICO DE BARRAS
+   ========================================== */
+
+/* Prepara as barras para a animação */
+#grafico-alertas td {
+  transform-origin: bottom; /* Prende a base da barra no chão para ela não crescer pelo meio */
+  transform: scaleY(0); /* Esconde a barra esmagando ela no eixo Y */
+  animation: crescerBarra 0.8s ease-out forwards; /* Chama a animação */
+}
+
+@keyframes crescerBarra {
+  to {
+    transform: scaleY(1); /* Estica a barra até o tamanho que está lá no HTML (--size) */
+  }
+}
+/* Atraso individual para cada mês */
+#grafico-alertas tr:nth-child(1) td { animation-delay: 0.1s; }
+#grafico-alertas tr:nth-child(2) td { animation-delay: 0.2s; }
+#grafico-alertas tr:nth-child(3) td { animation-delay: 0.3s; }
+#grafico-alertas tr:nth-child(4) td { animation-delay: 0.4s; }
+#grafico-alertas tr:nth-child(5) td { animation-delay: 0.5s; }
+#grafico-alertas tr:nth-child(6) td { animation-delay: 0.6s; }
+
+
 #section-resume{
   padding: 2rem;
   border-radius: 20px;
