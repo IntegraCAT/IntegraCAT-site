@@ -33,10 +33,10 @@ main{
 
 .content {
   flex: 1; 
-  padding: 80px;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .title-logo {
@@ -71,12 +71,13 @@ main{
   cursor: pointer;
 }
 .content h1{
-  font-size: 36px;
+  font-size: 32px;
 }
 
 /*=========================================
     Daqui para baixo itens da dashboard => HOME
 =========================================*/
+
 .container-card-alert{
   display: flex;
   gap: 2rem;
@@ -95,9 +96,22 @@ main{
   background: var(--color-bg-secondary);
 }
 
-.card-alert p{
-  font-size: 38px;
+.card-alert h2{
+  font-size: 36px;
   font-weight: 700;
+}
+
+/* Classes dinâmicas para o JS aplicar no dashboard */
+.texto-verde {
+  color: var(--color-green); 
+}
+
+.texto-amarelo {
+  color: var(--color-yellow); 
+}
+
+.texto-vermelho {
+  color: var(--color-red); 
 }
 
 .card-alert h3{
@@ -119,6 +133,9 @@ main{
   border-radius: 20px;
 
   background: var(--color-bg-secondary);
+}
+.card-grafico h3{
+  font-size: 24px;
 }
 
 #section-resume{
@@ -153,7 +170,7 @@ main{
   box-shadow: 1px 2px 5px #ffffff6e;
 }
 
-.card-ocorrencia > span{
+.card-ocorrencia span{
   font-weight: bold;
 }
 
