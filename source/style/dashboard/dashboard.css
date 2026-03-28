@@ -246,6 +246,23 @@ main{
   flex: 1
 }
 
+/* Ver ocorrência */
+
+.descricao{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  border: 1px solid var(--color-light-primary);
+  box-shadow: 1px 1px 5px #ffffff6d;
+  border-radius: 1rem;
+}
+.card-resultado-expandido{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 /*=========================================
     Daqui para baixo itens da dashboard => CONFIGURAÇÕES
 =========================================*/
