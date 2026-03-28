@@ -174,7 +174,37 @@ main{
   font-weight: bold;
 }
 
+/*=========================================
+    Daqui para baixo itens da dashboard => HISTÓRICO
+=========================================*/
 
+.content-section select, .search-bar{
+  width: 100%;
+  padding: 8px;
+  margin: 16px 0px;
+  padding: 8px 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-light-primary); 
+  border-radius: 10px;
+  outline: none;/* Remove borda*/
+}
+
+.content-section input{
+  border: none;
+  background-color: var(--color-bg-secondary);
+  width: 100%;
+}
+.search-bar{
+  display: flex;
+  gap: 1rem;
+  border-radius: 0;
+}
+.search-bar button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 /*=========================================
     Daqui para baixo itens da dashboard => CONFIGURAÇÕES
 =========================================*/
@@ -276,5 +306,6 @@ main{
 =========================================*/
 
 select, option{
-  color: black;
+  color: white;
+  background-color: var(--color-bg-secondary);
 }
