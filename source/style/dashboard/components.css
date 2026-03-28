@@ -1,0 +1,61 @@
+/* Sidebar */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  height: 100vh;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0; 
+  background: var(--color-bg-secondary);
+  gap: 2rem;
+}
+
+.sidebar-nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.sidebar-nav a{
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+}
+
+/* Logo Sidebar */
+
+.title-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  white-space: nowrap;  
+}
+
+.title-logo img[alt="letreiro - IntegraCAT"] {
+  height: 64px;
+  width: 50%;
+  
+  object-fit: contain;
+  padding-right: 2%;
+}
+.title-logo img[alt="logo - IntegraCAT"] {
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+}
+
+.lettering-logo{
+  width: 40%;
+}
+
+.title-logo button {
+  background-color: transparent;
+  border: 0;
+  width: auto;
+  cursor: pointer;
+}
