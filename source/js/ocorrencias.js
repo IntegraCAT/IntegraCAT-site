@@ -18,7 +18,7 @@ const btnPesquisa = document.getElementById("btn-pesquisa");
 
 const containerResultados = document.getElementById("container-resultados");
 
-
+const dataAtual = new Date();
 
 function criarOcorrencia() {
   if (!inputTitulo.value) return alert("Insira um título para a Ocorrência!");
@@ -53,8 +53,8 @@ function criarOcorrencia() {
   const novaOcorrencia = {
     titulo: inputTitulo.value,
     colaborador: inputColaborador.value,
-    data: inputData.value || ,
-    horario: inputHorario.value  ||,
+    data: inputData.value || `${dataAtual.getDate()}-${dataAtual.getMonth() + 1}-${dataAtual.getFullYear()}`,
+    horario: inputHorario.value  || `${dataAtual.getHours()}:${dataAtual.getMinutes()}`,
     descricao: inputDescricao.value,
     setor: nomesFormatados[inputSetor.value] || "Não definido",
     tipo: nomesFormatados[inputTipo.value] || "Não definido",
@@ -66,6 +66,7 @@ function criarOcorrencia() {
   ocorrenciasCadastradas.push(novaOcorrencia);
 
   sessionStorage.setItem("listaOcorrencias", JSON.stringify(ocorrenciasCadastradas))
+  window.location.reload();
 };
 
 function mostrarResultados() {
