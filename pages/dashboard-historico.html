@@ -165,7 +165,7 @@
 
               <div class="campo">
                 <div class="campo">
-                  <label for="tipo">Tipo da Ocorrência</label>
+                  <label for="tipo">Tipo</label>
                   <select id="tipo" name="tipo">
                     <option value="" disabled selected>
                       Selecione o tipo...
@@ -205,7 +205,7 @@
               </div>
             </div>
 
-            <button class="btn-green">PESQUISAR</button>
+            <button id="btn-pesquisa" class="btn-green">PESQUISAR</button>
           </div>
 
           <section>
@@ -217,12 +217,12 @@
                   <a href="">Ver</a>
                 </div>
                 <div class="resultado-grid">
-                  <p>Colaborador: John Fulano</p>
-                  <p>Setor: Entrega</p>
-                  <p>Tipo: Acidente</p>
-                  <p>Data: DD/MM/AAAA</p>
-                  <p>Nivel da ocorrência: Alto, Médio ou Baixo</p>
-                  <p>Status: Aberto</p>
+                  <p><strong>Colaborador:</strong> John Fulano</p>
+                  <p><strong>Setor:</strong> Entrega</p>
+                  <p><strong>Tipo:</strong> Acidente</p>
+                  <p><strong>Data:</strong> DD/MM/AAAA</p>
+                  <p><strong>Nivel da ocorrência:</strong> Alto, Médio ou Baixo</p>
+                  <p><strong>Status:</strong> Aberto</p>
                 </div>
                 <div>
                   <h4>Descrição resumida:</h4>
@@ -234,5 +234,6 @@
         </section>
       </main>
     </div>
+    <script src="/source/js/ocorrencias.js"></script>
   </body>
 </html>

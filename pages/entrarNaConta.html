@@ -46,15 +46,15 @@
     <main class="campos-registro">
       <section id="autenticacao">
         <h1>Faça o login</h1>
-        <form class="auth-form" action="">
+        <form class="auth-form" action="" id="loginForm">
           <label for="identidade">ID</label><br />
-          <input type="text" name="" id="identidade" /><br />
+          <input type="text" name="" id="identidade" required/><br />
 
           <label for="email">E-mail</label><br />
-          <input type="email" name="" id="email" /><br />
+          <input type="email" name="" id="email" required/><br />
 
           <label for="senha">Senha</label><br />
-          <input type="password" name="" id="senha" /><br />
+          <input type="password" name="" id="senha" required/><br />
           <div class="container-opcoes">
             <a href="">Esqueci minha senha</a>
             <p>
@@ -64,7 +64,7 @@
           </div>
 
           <div class="container-btn">
-            <button class="btn-green">ENTRAR</button>
+            <button type="submit" class="btn-green">ENTRAR</button>
           </div>
         </form>
       </section>
@@ -133,5 +133,6 @@
         >
       </div>
     </footer>
+    <script src="/source/js/loginConta.js"></script>
   </body>
 </html>

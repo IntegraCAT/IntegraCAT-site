@@ -125,29 +125,35 @@
             <h3>Nova Ocorrência</h3>
             <form class="ocorrencia">
               <div class="form-section">
+                <h4>Título</h4>
+                <label for="titulo">Título da ocorrência</label>
+                <input id="titulo" type="text" placeholder="Título..." />
+              </div>
+
+              <div class="form-section">
                 <h4>Dados do Colaborador</h4>
-                <label>Nome do Colaborador</label>
-                <input type="text" placeholder="Nome..." />
+                <label for="colaborador">Nome do Colaborador</label>
+                <input id="colaborador" type="text" placeholder="Nome..." />
               </div>
 
               <div class="form-section">
                 <h4>Dados do Fato</h4>
                 <div class="form-row">
                   <div>
-                    <label>Data</label>
-                    <input type="date" placeholder="DD/MM/AA" />
+                    <label for="data">Data</label>
+                    <input id="data" type="date" placeholder="DD/MM/AA" />
                   </div>
                   <div>
-                    <label>Horário</label>
-                    <input type="time" placeholder="HH:MM" />
+                    <label for="horario">Horário</label>
+                    <input id="horario" type="time" placeholder="HH:MM" />
                   </div>
                 </div>
               </div>
 
               <div class="form-section">
                 <h4>Detalhes</h4>
-                <label>Descrição</label>
-                <textarea placeholder="Descrição..."></textarea>
+                <label for="descricao">Descrição</label><br>
+                <textarea id="descricao" placeholder="Descrição..."></textarea>
 
                 <div class="form-row">
                   <div>
@@ -198,14 +204,14 @@
                   </div>
 
                   <div>
-                    <label>Nível da ocorrência</label>
-                    <select>
+                    <label for="nivel">Nível da ocorrência</label>
+                    <select id="nivel" name="nivel">
                       <option value="" disabled selected>
                         Selecione o Nível da ocorrência...
                       </option>
-                      <option>Alto</option>
-                      <option>Médio</option>
-                      <option>Baixo</option>
+                      <option value="alto">Alto</option>
+                      <option value="medio">Médio</option>
+                      <option value="baixo">Baixo</option>
                     </select>
                   </div>
                 </div>
@@ -215,8 +221,8 @@
               <div class="form-section">
                 <h4>Consequência</h4>
                 <div>
-                  <label>Houve necessidade de afastamento?</label>
-                  <select>
+                  <label for="afastamento">Houve necessidade de afastamento?</label>
+                  <select id="afastamento" name="afastamento">
                     <option value="" disabled selected>Afastamento...</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -225,7 +231,7 @@
               </div>
 
               <div class="container-btn">
-                <button type="submit" class="btn-green">SALVAR</button>
+                <button id="btn-criarOcorrencia" type="button" class="btn-green">SALVAR</button>
                 <button type="button" class="btn-purple">CANCELAR</button>
               </div>
             </form>
@@ -233,5 +239,6 @@
         </section>
       </main>
     </div>
+    <script src="/source/js/ocorrencias.js"></script>
   </body>
 </html>
