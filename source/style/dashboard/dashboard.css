@@ -153,7 +153,7 @@ main{
   font-size: 20px;
 }
 
-.card-ocorrencia{
+.card-ocorrencia, .card-resultado{
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -170,9 +170,6 @@ main{
   box-shadow: 1px 2px 5px #ffffff6e;
 }
 
-.card-ocorrencia span{
-  font-weight: bold;
-}
 
 /*=========================================
     Daqui para baixo itens da dashboard => HISTÓRICO
