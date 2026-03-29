@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/source/style/variables.css" />
     <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
     <link rel="stylesheet" href="/source/style/components.css" />
+    <link rel="stylesheet" href="/source/style/dashboard/components.css">
 
     <link rel="shortcut icon" href="/source/img/logo integraCAT-nolet.svg" type="image/x-icon">
 
@@ -39,7 +40,7 @@
           <button>
             <img
               src="/source/img/icons/backArrow2.svg"
-              alt=""
+              alt="voltar" width="24px"
             />
           </button>
         </div>
@@ -99,7 +100,7 @@
             </a>
           </li>
           <li>
-            <a href="/index.html">
+            <a id="btn-sair" href="/index.html">
               <img
                 src="/source/img/icons/dashboard-icons/leave-icon.svg"
                 alt="sair-icon"
@@ -112,47 +113,43 @@
       <main class="content">
         <h1>Configurações da Conta</h1>
 
-        <section class="content-section">
+        <section class="content-section configurcoes">
           <h2 class="visually-hidden">Configurações</h2>
-          <form action="" id="informacoes">
+          <form id="informacoes-basicas" class="informacoes">
             <section>
               <h3>Informações Básicas</h3>
               <div class="configuracaes-basicas">
                 <div>
-                  <p>Foto de Perfil</p>
                   <div id="alterar-foto">
                     <img
                       src="/source/img/placeholder-cat.webp"
                       alt="foto usuário"
                     />
 
-                    <input type="button" value="" />
+                    <input type="image" id="imagem"/>
                   </div>
                 </div>
                 <div>
-                  <label for="nome">Nome:</label><br />
+                  <label for="nome">Nome</label><br />
                   <input
                     type="text"
-                    name="user_nome"
                     id="nome"
                     placeholder="Seu nome aqui..."
                   />
                   <br />
 
-                  <label for="cargo">Cargo:</label> <br />
+                  <label for="cargo">Cargo</label> <br />
                   <input
                     type="text"
-                    name="user_cargo"
                     id="cargo"
                     placeholder="Seu cargo aqui..."
                   />
                   <br />
 
-                  <label for="cargo">Empresa:</label> <br />
+                  <label for="empresa">Empresa</label> <br />
                   <input
                     type="text"
-                    name="user_cargo"
-                    id="cargo"
+                    id="empresa"
                     placeholder="Empresa atual aqui..."
                   />
                   <br />
@@ -164,29 +161,42 @@
               <h3>Informações Avançadas</h3>
 
               <label for="email">E-mail</label><br />
-              <input type="email" name="" id="email" /><br />
+              <input type="email" id="email" /><br />
 
               <label for="senha">Senha</label><br />
               <input
                 type="password"
-                name=""
                 id="senha"
                 placeholder="Alterar senha"
               /><br />
             </section>
 
-            <div class="container-btn">
-              <button class="btn-green">Salvar</button>
-              <button class="btn-purple">Cancelar</button>
+            <div id="btn-informacoes" class="container-btn esconder">
+              <button type="submit" class="btn-green">Salvar</button>
+              <button type="reset" class="btn-purple">Cancelar</button>
             </div>
           </form>
           <section class="excluir-section">
             <h3>Excluir Conta</h3>
 
-            <button class="btn-red">Excluir Conta</button>
+            <button id="btn-excluir-conta" class="btn-red">EXCLUIR CONTA</button>
           </section>
         </section>
       </main>
     </div>
+    <script src="/source/js/dashboardSideNav.js"></script>
+    <script src="/source/js/configurações.js"></script>
+    
+    <!-- API VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   </body>
 </html>

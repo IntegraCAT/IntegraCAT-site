@@ -4,7 +4,8 @@
     --color-blue-primary: #141380 ; 
     --color-blue-secondary: #0097B2 ; 
     --color-light-primary: #DCF8FA ; 
-    --color-green: #7ED957 ; 
+    --color-green: #7ED957; 
+    --color-yellow: #E3D000;
     --color-red: #E31414;
 
     --gradient-purple: linear-gradient(to bottom,rgba(22, 14, 57, 1) 0%, rgba(61, 39, 159, 1) 100%);
@@ -14,6 +15,7 @@
     --gradient-shadow-blue: linear-gradient(0deg,rgba(1, 1, 18, 1) 49%, rgba(20, 19, 128, 1) 100%);
     --gradient-shadow-blue-90: linear-gradient(0deg,rgba(20, 19, 128, 1) 0%, rgba(1, 1, 18, 1) 50%);;
     --gradient-green: linear-gradient(180deg,rgba(126, 217, 87, 1) 0%, rgba(0, 151, 178, 1) 100%);
-    --gradient-red: linear-gradient(180deg,#d95757 0%, rgba(0, 151, 178, 1) 100%);
-
+    --gradient-green-dark: linear-gradient(180deg,rgb(126, 217, 87, 1) 0%, rgb(6, 96, 119) 100%);
+    --gradient-red: linear-gradient(180deg,#bd0000 0%, rgb(255, 0, 0) 100%);
+    --gradient-red-dark: linear-gradient(180deg,#5c0000 0%, rgb(158, 0, 0) 100%);
 }

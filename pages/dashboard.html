@@ -18,12 +18,22 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+
     <link rel="stylesheet" href="/source/style/reset.css" />
     <link rel="stylesheet" href="/source/style/variables.css" />
     <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
     <link rel="stylesheet" href="/source/style/components.css" />
-    
-    <link rel="shortcut icon" href="/source/img/logo integraCAT-nolet.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/source/style/dashboard/components.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/source/img/logo integraCAT-nolet.svg"
+      type="image/x-icon"
+    />
 
     <title>Dashboard - integraCAT</title>
   </head>
@@ -31,16 +41,16 @@
     <div class="container">
       <nav class="sidebar-nav">
         <div class="title-logo">
-          <img src="/source/img/logo integraCAT-nolet.svg" alt="logo - IntegraCAT" />
+          <img
+            src="/source/img/logo integraCAT-nolet.svg"
+            alt="logo - IntegraCAT"
+          />
           <img
             src="/source/img/lettering integraCAT.svg"
             alt="letreiro - IntegraCAT"
           />
           <button>
-            <img
-              src="/source/img/icons/backArrow2.svg"
-              alt=""
-            />
+            <img src="/source/img/icons/backArrow2.svg" alt="" />
           </button>
         </div>
         <ul>
@@ -99,7 +109,7 @@
             </a>
           </li>
           <li>
-            <a href="/index.html">
+            <a id="btn-sair" href="/index.html">
               <img
                 src="/source/img/icons/dashboard-icons/leave-icon.svg"
                 alt="sair-icon"
@@ -110,25 +120,25 @@
         </ul>
       </nav>
       <main class="content">
-        <h1>Bem-vindo à Página</h1>
+        <h1 id="nome-usuario">Bem-vindo,</h1>
 
         <section class="container-card-alert">
           <h2 class="visually-hidden">Resumo de Segurança</h2>
 
           <article class="card-alert">
-            <p>72</p>
+            <h2 id="valor-dias">72</h2>
             <h3>Dias sem acidentes</h3>
           </article>
           <article class="card-alert">
-            <p>02</p>
+            <h2 id="valor-alertas">02</h2>
             <h3>Alertas recebidos</h3>
           </article>
           <article class="card-alert">
-            <p>Baixo</p>
+            <h2 id="valor-risco">Baixo</h2>
             <h3>Nível de risco atual</h3>
           </article>
           <article class="card-alert">
-            <p>01</p>
+            <h2 id="valor-treinamentos">01</h2>
             <h3>Treinamentos Vencendo</h3>
           </article>
         </section>
@@ -138,26 +148,129 @@
 
           <article class="card-grafico">
             <h3>Ocorrências por Setor</h3>
+
+            <div class="container-pizza">
+              <table
+                class="charts-css pie multiple hide-data"
+                id="grafico-pizza"
+              >
+                <tbody>
+                  <tr>
+                    <td id="fatia-producao" style="--color: #1a1b41"></td>
+                  </tr>
+                  <tr>
+                    <td id="fatia-logistica" style="--color: #21308a"></td>
+                  </tr>
+                  <tr>
+                    <td id="fatia-escritorio" style="--color: #00a4b4"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <ul class="legenda-pizza">
+                <li>
+                  <span class="cor-producao"></span>
+                  <span id="texto-producao"> 40%</span> Produção
+                </li>
+                <li>
+                  <span class="cor-logistica"></span>
+                  <span id="texto-logistica"> 30%</span> Logística
+                </li>
+                <li>
+                  <span class="cor-escritorio"></span>
+                  <span id="texto-escritorio"> 30%</span> Escritório
+                </li>
+              </ul>
+            </div>
           </article>
           <article class="card-grafico">
             <h3>Alertas nos últimos 6 meses</h3>
+
+            <table
+              class="charts-css column hide-data show-primary-axis show-labels data-spacing-10"
+              id="grafico-alertas"
+            >
+              <tbody>
+                <tr>
+                  <th scope="row">Out</th>
+                  <td
+                    style="--size: 0.4; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+                <tr>
+                  <th scope="row">Nov</th>
+                  <td
+                    style="--size: 0.7; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dez</th>
+                  <td
+                    style="--size: 1; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+                <tr>
+                  <th scope="row">Jan</th>
+                  <td
+                    style="--size: 0.6; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+                <tr>
+                  <th scope="row">Fev</th>
+                  <td
+                    style="--size: 0.4; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+                <tr>
+                  <th scope="row">Mar</th>
+                  <td
+                    style="--size: 0.2; background-image: var(--gradient-green)"
+                  ></td>
+                </tr>
+              </tbody>
+            </table>
           </article>
         </section>
 
         <section id="section-resume">
+          <a
+            href="/pages/dashboard-historico.html"
+            style="text-decoration: none; color: inherit"
+          >
+            <h2>Alertas Recebidos</h2>
+          </a>
 
-          <h2>Alertas Recebidos</h2>
-          <article>
-            <h3>Título da ocorrência</h3>
-            <div class="infos-resume-basic">
-              <p>Nivel da ocorrência: Alto, Médio, Baixo.</p>
-              <p>Setor: Produção.</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque beatae ad nostrum ipsum eaque quis labore voluptatum ab nulla, id amet quae molestias illum debitis asperiores aperiam cumque similique accusantium?</p>
-          </article>
-
+          <div id="container-cards">
+            <article class="card-ocorrencia">
+              <h3>Título da ocorrência</h3>
+              <p><b>Nível da ocorrência:</b> Alto, Médio, Baixo.</p>
+              <p><b>Setor:</b> Produção.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloremque beatae ad nostrum ipsum eaque quis labore voluptatum
+                ab nulla, id amet quae molestias illum debitis asperiores
+                aperiam cumque similique accusantium?
+              </p>
+            </article>
+          </div>
         </section>
       </main>
     </div>
+    <script src="/source/js/dashboardSideNav.js"></script>
+    <script src="/source/js/dashboardHome.js"></script>
+
+    <!-- API VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script src="/source/js/card-alert.js"></script>
+    <script src="/source/js/graficos.js"></script>
   </body>
 </html>

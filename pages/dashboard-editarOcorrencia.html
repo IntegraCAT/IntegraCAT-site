@@ -120,14 +120,14 @@
       </nav>
       <main class="content">
         <div class="title-header">
-          <h1>Criar Ocorrência</h1>
+          <h1>Editar Ocorrência</h1>
           <a href="">← Voltar</a>
         </div>
 
         <section class="content-section">
           <h2 class="visually-hidden">Ocorrência</h2>
           <section class="conteiner-nova-ocorrencia">
-            <h3>Nova Ocorrência</h3>
+            <h3>Editando Ocorrência</h3>
             <form class="ocorrencia">
               <div class="form-section">
                 <h4>Título</h4>
@@ -228,12 +228,23 @@
                 <h4>Consequência</h4>
                 <div>
                   <label for="afastamento"
-                    >Houve necessidade de afastamento?</label
-                  >
+                    >Houve necessidade de afastamento?</label>
                   <select id="afastamento" name="afastamento">
                     <option value="" disabled selected>Afastamento...</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4>Status</h4>
+                <div>
+                  <label for="status"
+                    >Qual é o Status atual?</label>
+                  <select id="status" name="afastamento">
+                    <option value="" disabled selected>Afastamento...</option>
+                    <option value="aberto">Aberto</option>
+                    <option value="fechado">Fechado</option>
                   </select>
                 </div>
               </div>
@@ -246,14 +257,15 @@
                 >
                   SALVAR
                 </button>
-                <button type="button" class="btn-purple">CANCELAR</button>
+                <button type="button" class="btn-purple" onclick="location.href='/pages/dashboard-ocorrencia.html'">CANCELAR</button>
+                
               </div>
             </form>
           </section>
         </section>
       </main>
     </div>
-    <script src="/source/js/criarOcorrencias.js"></script>
+    <script src="/source/js/editarOcorrencia.js"></script>
     <script src="/source/js/dashboardSideNav.js"></script>
     <!-- API VLibras -->
     <div vw class="enabled">

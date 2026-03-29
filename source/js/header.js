@@ -28,3 +28,11 @@ btnMenu.addEventListener('click', () => {
   // se a classe não existe, o toggle coloca. Se existe, ele tira.
   menuLista.classList.toggle('menu-aberto');
 });
+
+
+/*Caso o usuário já esteja logado*/
+const logado = JSON.parse(sessionStorage.getItem("usuarioAtivo"));
+if (logado) {
+  const btnEntrar = document.getElementById("btn-entrar-conta")
+  btnEntrar.href = "/pages/dashboard.html"
+}
