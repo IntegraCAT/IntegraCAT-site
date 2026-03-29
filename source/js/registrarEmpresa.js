@@ -86,7 +86,7 @@ function criarEmpresa(event) {
     email: emailInput,
     senha: senhaInput.value,
     cargo: "",
-    empresaVinculado: "",
+    empresaVinculado: identidadeInput.value,
     fotoPerfil: ""
   };
 

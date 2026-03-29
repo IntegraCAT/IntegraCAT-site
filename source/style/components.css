@@ -152,7 +152,7 @@ Daqui para baixo classes do btn-green
   border-radius: 50px;
   border: 0;
   background-image: var(--gradient-green);
-  box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.457);
+  box-shadow: 1px 1px 6px rgba(88, 255, 158, 0.457);
   cursor: pointer;
   transition: color 500ms ease-in-out;
 }
@@ -162,7 +162,7 @@ Daqui para baixo classes do btn-green
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--gradient-purple);
+  background-image: var(--gradient-green-dark);
   z-index: -1;
   opacity: 0; /* Começa invisível */
   transition: opacity 500ms ease-in-out;
@@ -181,19 +181,17 @@ Daqui para baixo classes do btn-purple
   align-self: center;
   width: fit-content;
   font-weight: 700;
-  color: black;
   position: relative; /* Necessário para o ::before */
   z-index: 1;
   overflow: hidden;
-  padding: 16px 24px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   border: 0;
+  color: white;
   background-image: var(--gradient-purple);
-  border-bottom: 2px solid var(--color-light-primary);
+  box-shadow: 1px 1px 6px rgba(223, 96, 255, 0.457);
   cursor: pointer;
-  color: var(--color-light-primary);
   transition: color 500ms ease-in-out;
-
 }
 
 /* uma "camada" por cima com o gradiente roxo */
@@ -211,7 +209,7 @@ Daqui para baixo classes do btn-purple
   opacity: 1;
 }
 .btn-purple:hover{
-  color: #ffffff;
+  color: hsl(305, 100%, 78%);
 }
 /*========================================
 Daqui para baixo classes do btn-red
@@ -220,16 +218,17 @@ Daqui para baixo classes do btn-red
   align-self: center;
   width: fit-content;
   font-weight: 700;
-  color: black;
+  color: rgb(255, 255, 255);
   position: relative; /* Necessário para o ::before */
   z-index: 1;
   overflow: hidden;
-  padding: 16px 24px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   border: 0;
-  background: var(--color-red);
-  border-bottom: 2px solid var(--color-light-primary);
+  background: var(--gradient-red);
+  box-shadow: 1px 1px 6px rgba(255, 24, 24, 0.457);
   cursor: pointer;
+  transition: color 500ms ease-in-out;
 }
 
 /* uma "camada" por cima com o gradiente roxo */
@@ -237,7 +236,7 @@ Daqui para baixo classes do btn-red
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--gradient-purple);
+  background-image: var(--gradient-red-dark);
   z-index: -1;
   opacity: 0; /* Começa invisível */
   transition: opacity 500ms ease-in-out;
@@ -245,6 +244,9 @@ Daqui para baixo classes do btn-red
 
 .btn-red:hover::before {
   opacity: 1;
+}
+.btn-red:hover{
+  color: #f18888;
 }
 
 /*========================================

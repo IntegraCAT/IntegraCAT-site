@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/source/style/variables.css" />
     <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
     <link rel="stylesheet" href="/source/style/components.css" />
+    <link rel="stylesheet" href="/source/style/dashboard/components.css" />
 
     <link
       rel="shortcut icon"
@@ -35,7 +36,10 @@
     <div class="container">
       <nav class="sidebar-nav">
         <div class="title-logo">
-          <img src="/source/img/logo integraCAT-nolet.svg" alt="logo - IntegraCAT" />
+          <img
+            src="/source/img/logo integraCAT-nolet.svg"
+            alt="logo - IntegraCAT"
+          />
           <img
             src="/source/img/lettering integraCAT.svg"
             alt="letreiro - IntegraCAT"
@@ -43,7 +47,8 @@
           <button>
             <img
               src="/source/img/icons/backArrow2.svg"
-              alt=""
+              alt="voltar"
+              width="24px"
             />
           </button>
         </div>
@@ -103,7 +108,7 @@
             </a>
           </li>
           <li>
-            <a href="/index.html">
+            <a id="btn-sair" href="/index.html">
               <img
                 src="/source/img/icons/dashboard-icons/leave-icon.svg"
                 alt="sair-icon"
@@ -120,87 +125,89 @@
           <h2 class="visually-hidden">Histórico</h2>
           <div class="container-search">
             <div class="search-bar">
-              <i class="fas fa-search"></i>
+              <button>
+                <img src="../source/img/icons/Search.svg" alt="lupa" />
+              </button>
               <input type="text" placeholder="Pesquisar..." />
             </div>
 
             <div class="filtros-grid">
-              <div class="campo">
-                <label>Período</label>
-                <select>
-                  <option>Neste Mês</option>
-                  <option>Neste Semestre</option>
-                  <option>Neste Ano</option>
-                  <option>Todos</option>
-                </select>
-              </div>
-
-              <div class="campo">
-                <label for="setor">Setor</label>
-                <select id="setor" name="setor">
-                  <option value="" disabled selected>
-                    Selecione o setor...
-                  </option>
-                  <option value="adm">Administrativo / Escritório</option>
-                  <option value="logistica">Entregas / Logística</option>
-                  <option value="producao">Linha de Produção / Fábrica</option>
-                  <option value="manutencao">Manutenção / Oficina</option>
-                  <option value="limpeza">Serviços Gerais / Limpeza</option>
-                  <option value="ti">TI / Infraestrutura</option>
-                  <option value="externo">Campo / Operações Externas</option>
-                </select>
-              </div>
-
-              <div class="campo">
-                <label>Nível da ocorrência</label>
-                <select>
-                  <option value="" disabled selected>
-                    Selecione o Nível da ocorrência...
-                  </option>
-                  <option>Alto</option>
-                  <option>Médio</option>
-                  <option>Baixo</option>
-                </select>
-              </div>
-
-              <div class="campo">
+              <div class="filtros-row">
                 <div class="campo">
-                  <label for="tipo">Tipo</label>
-                  <select id="tipo" name="tipo">
+                  <label>Período</label>
+                  <select>
+                    <option value="mes">Neste Mês</option>
+                    <option value="semestre">Neste Semestre</option>
+                    <option value="neste_ano">Neste Ano</option>
+                    <option value="todos">Todos</option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="setor">Setor</label>
+                  <select id="setor" name="setor">
                     <option value="" disabled selected>
-                      Selecione o tipo...
+                      Selecione o setor...
                     </option>
-                    <option value="acidente_com_afastamento">
-                      Acidente com Afastamento
-                    </option>
-                    <option value="acidente_sem_afastamento">
-                      Acidente sem Afastamento
-                    </option>
-                    <option value="incidente_quase_acidente">
-                      Incidente (Quase Acidente)
-                    </option>
-                    <option value="trajeto">Acidente de Trajeto</option>
-                    <option value="doenca_ocupacional">
-                      Doença Ocupacional
-                    </option>
-                    <option value="primeiros_socorros">
-                      Atendimento de Primeiros Socorros
-                    </option>
-                    <option value="risco_ambiental">
-                      Risco Ambiental / Vazamento
-                    </option>
+                    <option value="adm">Administrativo / Escritório</option>
+                    <option value="logistica">Entregas / Logística</option>
+                    <option value="producao">Linha de Produção / Fábrica</option>
+                    <option value="manutencao">Manutenção / Oficina</option>
+                    <option value="limpeza">Serviços Gerais / Limpeza</option>
+                    <option value="ti">TI / Infraestrutura</option>
+                    <option value="externo">Campo / Operações Externas</option>
                   </select>
                 </div>
               </div>
 
-              <div class="campo status">
+              <div class="filtros-row">
+                <div class="campo">
+                  <label for="nivel">Nível da ocorrência</label>
+                  <select id="nivel" name="nivel">
+                    <option value="" disabled selected>Selecione o Nível da ocorrência...</option>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Médio</option>
+                    <option value="baixo">Baixo</option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="tipo">Tipo da Ocorrência</label>
+                    <select id="tipo" name="tipo">
+                      <option value="" disabled selected>
+                        Selecione o tipo...
+                      </option>
+                      <option value="acidente_com_afastamento">
+                        Acidente com Afastamento
+                      </option>
+                      <option value="acidente_sem_afastamento">
+                        Acidente sem Afastamento
+                      </option>
+                      <option value="incidente_quase_acidente">
+                        Incidente (Quase Acidente)
+                      </option>
+                      <option value="trajeto">Acidente de Trajeto</option>
+                      <option value="doenca_ocupacional">
+                        Doença Ocupacional
+                      </option>
+                      <option value="primeiros_socorros">
+                        Atendimento de Primeiros Socorros
+                      </option>
+                      <option value="risco_ambiental">
+                        Risco Ambiental / Vazamento
+                      </option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="campo">
                 <label>Status</label>
                 <select>
                   <option value="" disabled selected>
-                      Selecione o Status...
-                    </option>
+                    Selecione o Status...
+                  </option>
                   <option value="aberto">Aberto</option>
-                  <option value="fechado">Fechado<</option>
+                  <option value="fechado">Fechado</option>
                 </select>
               </div>
             </div>
@@ -208,15 +215,25 @@
             <button id="btn-pesquisa" class="btn-green">PESQUISAR</button>
           </div>
 
-          <section>
+          <section id="resultados">
             <h3>Resultados</h3>
-            <div id="container-resultados">
-            </div>
+            <div id="container-resultados"></div>
           </section>
         </section>
       </main>
     </div>
-    <script src="/source/js/ocorrencias.js"></script>
-    <script src="/source/js/dashboard.js"></script>
+    <script src="/source/js/mostrarOcorrencias.js"></script>
+    <script src="/source/js/dashboardSideNav.js"></script>
+    <!-- API VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>

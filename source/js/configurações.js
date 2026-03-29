@@ -17,8 +17,6 @@ const usuariosCadastrados = dadosNoStorage
     ? JSON.parse(dadosNoStorage) 
     : [usuarioPadrao];
 
-const logado = JSON.parse(sessionStorage.getItem("usuarioAtivo"));
-
 // Entradas
 const nomeInput = document.getElementById("nome");
 const cargoInput = document.getElementById("cargo");
@@ -62,7 +60,8 @@ function deletarCadastro(){
     
     usuariosCadastrados.splice(cadastroIndex, 1);
     sessionStorage.setItem("listaCadastrados", JSON.stringify(usuariosCadastrados));
-    sessionStorage.removeItem("usuarioAtivo")
+    sessionStorage.removeItem("usuarioAtivo");
+    window.location.href = "/index.html";
 }
 
 function cancelarEnvio(){

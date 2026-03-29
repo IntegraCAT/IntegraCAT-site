@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/source/style/variables.css" />
     <link rel="stylesheet" href="/source/style/dashboard/dashboard.css" />
     <link rel="stylesheet" href="/source/style/components.css" />
+    <link rel="stylesheet" href="/source/style/dashboard/components.css">
 
     <link rel="shortcut icon" href="/source/img/logo integraCAT-nolet.svg" type="image/x-icon">
 
@@ -39,7 +40,7 @@
           <button>
             <img
               src="/source/img/icons/backArrow2.svg"
-              alt=""
+              alt="voltar" width="24px"
             />
           </button>
         </div>
@@ -99,7 +100,7 @@
             </a>
           </li>
           <li>
-            <a href="/index.html">
+            <a id="btn-sair" href="/index.html">
               <img
                 src="/source/img/icons/dashboard-icons/leave-icon.svg"
                 alt="sair-icon"
@@ -119,7 +120,6 @@
               <h3>Informações Básicas</h3>
               <div class="configuracaes-basicas">
                 <div>
-                  <p>Foto de Perfil</p>
                   <div id="alterar-foto">
                     <img
                       src="/source/img/placeholder-cat.webp"
@@ -179,12 +179,24 @@
           <section class="excluir-section">
             <h3>Excluir Conta</h3>
 
-            <button id="btn-excluir-conta" class="btn-red">Excluir Conta</button>
+            <button id="btn-excluir-conta" class="btn-red">EXCLUIR CONTA</button>
           </section>
         </section>
       </main>
     </div>
+    <script src="/source/js/dashboardSideNav.js"></script>
     <script src="/source/js/configurações.js"></script>
-    <script src="/source/js/dashboard.js"></script>
+    
+    <!-- API VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
   </body>
 </html>
