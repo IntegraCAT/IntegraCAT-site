@@ -15,7 +15,6 @@ Daqui para baixo classes dentro de AUTENTICACAO
   border-radius: 20px;
   background: var(--color-bg-secondary);
   width: 70%;
-  max-width: 650px;
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -44,7 +43,6 @@ Daqui para baixo classes dentro de AUTENTICACAO
   gap: 1rem;
   align-items: center;
   margin: 1rem 0;
-  flex-wrap: wrap;
 }
 .container-opcoes div{
   width: 100%;
@@ -79,7 +77,19 @@ Daqui para baixo classes dentro de AUTENTICACAO
   justify-content: center;
 }
 
-
 .container-btn > .btn-green{
   width: 273px;
+}
+
+.container-mandar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.auth-form .senhas-diferentes{
+  border-bottom: 2px solid var(--color-red); 
 }

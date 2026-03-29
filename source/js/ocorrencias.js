@@ -1,6 +1,6 @@
 const ocorrenciasCadastradas = JSON.parse(sessionStorage.getItem("listaOcorrencias") || "[]");
-/*Entradas para criar ocorrencia*/
 
+/*Entradas para criar ocorrencia*/
 const inputTitulo = document.getElementById("titulo");
 const inputColaborador = document.getElementById("colaborador");
 const inputData = document.getElementById("data");
@@ -65,7 +65,7 @@ function criarOcorrencia() {
 
   ocorrenciasCadastradas.push(novaOcorrencia);
 
-  sessionStorage.setItem("listaOcorrencias", JSON.stringify(ocorrenciasCadastradas))
+  sessionStorage.setItem("listaOcorrencias", JSON.stringify(ocorrenciasCadastradas));
   window.location.reload();
 };
 
@@ -78,7 +78,7 @@ function mostrarResultados() {
   if (ocorrenciasCadastradas.length > 0) {
     ocorrenciasCadastradas.forEach(item => {
       /*Onde o resultado será armazenado*/
-      const secao = document.createElement("section");
+      const secao = document.createElement("article");
       secao.classList.add("resultado");
 
       /* Monta o resultado*/
@@ -108,7 +108,7 @@ function mostrarResultados() {
   } else {
 
     /*Onde o resultado será armazenado*/
-    const secaoAviso = document.createElement("section");
+    const secaoAviso = document.createElement("article");
     secaoAviso.classList.add("resultado");
 
     secaoAviso.innerHTML = `

@@ -6,10 +6,7 @@ const usuarioPadrao = {
     id: "123",
     cnpj: "",
     email: "entrar@integracat.com",
-    senha: "123",
-    cargo: "",
-    empresaVinculado: "",
-    fotoPerfil: ""
+    senha: "123"
 };
 
 // Se houver dados, transforma em objeto. Se não, usa o padrão.
@@ -32,14 +29,12 @@ function entrarNoUsuario(event) {
   );
 
   if (verificandoUsuario) {
-    sessionStorage.setItem("usuarioAtivo", JSON.stringify(verificandoUsuario));
+    console.log("Login sucesso");
     window.location.href = "/pages/dashboard.html"
   } else {
-    alert("ID, E-mail ou Senha inválidos.");
+    console.log("Usuário não encontrado");
   }
 }
-
-sessionStorage.setItem("listaCadastrados", JSON.stringify(usuariosCadastrados));
 
 loginForm?.addEventListener("submit", entrarNoUsuario);
 

@@ -112,9 +112,9 @@
       <main class="content">
         <h1>Configurações da Conta</h1>
 
-        <section class="content-section">
+        <section class="content-section configurcoes">
           <h2 class="visually-hidden">Configurações</h2>
-          <form action="" id="informacoes">
+          <form id="informacoes-basicas" class="informacoes">
             <section>
               <h3>Informações Básicas</h3>
               <div class="configuracaes-basicas">
@@ -126,33 +126,30 @@
                       alt="foto usuário"
                     />
 
-                    <input type="button" value="" />
+                    <input type="image" id="imagem"/>
                   </div>
                 </div>
                 <div>
-                  <label for="nome">Nome:</label><br />
+                  <label for="nome">Nome</label><br />
                   <input
                     type="text"
-                    name="user_nome"
                     id="nome"
                     placeholder="Seu nome aqui..."
                   />
                   <br />
 
-                  <label for="cargo">Cargo:</label> <br />
+                  <label for="cargo">Cargo</label> <br />
                   <input
                     type="text"
-                    name="user_cargo"
                     id="cargo"
                     placeholder="Seu cargo aqui..."
                   />
                   <br />
 
-                  <label for="cargo">Empresa:</label> <br />
+                  <label for="empresa">Empresa</label> <br />
                   <input
                     type="text"
-                    name="user_cargo"
-                    id="cargo"
+                    id="empresa"
                     placeholder="Empresa atual aqui..."
                   />
                   <br />
@@ -160,24 +157,30 @@
               </div>
             </section>
 
+            <div id="btn-basicas" class="container-btn esconder">
+              <button type="submit" class="btn-green">Salvar</button>
+              <button type="reset" class="btn-purple">Cancelar</button>
+            </div>
+
+            </form>
+            <form id="informacoes-avancadas" class="informacoes">
             <section class="configuracaes-avancadas">
               <h3>Informações Avançadas</h3>
 
               <label for="email">E-mail</label><br />
-              <input type="email" name="" id="email" /><br />
+              <input type="email" id="email" /><br />
 
               <label for="senha">Senha</label><br />
               <input
                 type="password"
-                name=""
                 id="senha"
                 placeholder="Alterar senha"
               /><br />
             </section>
 
-            <div class="container-btn">
-              <button class="btn-green">Salvar</button>
-              <button class="btn-purple">Cancelar</button>
+            <div id="btn-avancadas" class="container-btn esconder">
+              <button type="submit" class="btn-green">Salvar</button>
+              <button type="reset" class="btn-purple">Cancelar</button>
             </div>
           </form>
           <section class="excluir-section">
@@ -188,5 +191,6 @@
         </section>
       </main>
     </div>
+    <script src="/source/js/configurações.js"></script>
   </body>
 </html>

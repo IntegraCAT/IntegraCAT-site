@@ -148,14 +148,18 @@ main{
   background-color: var(--color-bg-secondary);
 }
 
-#informacoes{
+.configurcoes section > h3{
+  margin-bottom: 16px;
+}
+
+.informacoes{
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 0px;
 }
 
-#informacoes input{
+.informacoes input{
   width: 100%;
   padding: 8px;
   margin: 16px 0px;
@@ -170,12 +174,11 @@ main{
 
 }
 
-#informacoes input::placeholder{
+.informacoes input::placeholder{
   color: var(--color-light-primary);
 }
 
 .configuracaes-basicas{
-  padding-top: 12px;
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -219,6 +222,7 @@ main{
 
 
 .container-btn{
+  opacity: 1;
   display: flex;
   gap: 20px;
 }
@@ -228,6 +232,11 @@ main{
   width: 100%;
 }
 
+.esconder {
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+}
 /*=========================================
     Daqui para baixo itens da dashboard => CONFIGURAÇÕES
 =========================================*/
