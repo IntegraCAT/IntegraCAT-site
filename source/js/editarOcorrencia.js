@@ -52,7 +52,7 @@ function editarOcorrencia() {
     // Atualizar o sessionStorage
     sessionStorage.setItem("ocorrenciaSelecionada", JSON.stringify(ocorrenciaEditada));
 
-    window.location.reload();
+    window.location.href = "/pages/dashboard-ocorrencia.html";
 };
 
 
