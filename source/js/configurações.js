@@ -31,7 +31,7 @@ const senhaInput = document.getElementById("senha");
 const infoBasicas = document.getElementById("informacoes-basicas");
 const infoAvancadas = document.getElementById("informacoes-avancadas");
 // Botões
-const btnBasicas = document.getElementById("btn-basicas"); //Informaçoews básicas
+const btnInformacoes = document.getElementById("btn-informacoes"); //Informaçoews básicas
 const btnAvancadas = document.getElementById("btn-avancadas");
 
 
@@ -61,11 +61,6 @@ function cancelarEnvio(){
     window.location.reload();
 }
 
-
-function mostrarBotao() {
-    btnBasicas.classList.remove("esconder");
-}
-
 // Mostrar os valores atuais da conta do usuário
 nomeInput.value = logado.identidade;
 cargoInput.value = logado.cargo || "";
@@ -79,6 +74,6 @@ const camposBasicos = [nomeInput, cargoInput, empresaInput, imagemInput];
 
 camposBasicos.forEach(input => {
     input.addEventListener("input", () => {
-        btnBasicas.classList.remove("esconder");
+        btnInformacoes.classList.remove("esconder");
     });
 });

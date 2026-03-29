@@ -225,6 +225,7 @@ main{
   opacity: 1;
   display: flex;
   gap: 20px;
+  transition: opacity 300ms ease;
 }
 
 .container-btn button{
@@ -232,10 +233,9 @@ main{
   width: 100%;
 }
 
-.esconder {
+.container-btn.esconder{
   opacity: 0;
   pointer-events: none; 
-  transition: opacity 0.3s ease;
 }
 /*=========================================
     Daqui para baixo itens da dashboard => CONFIGURAÇÕES
