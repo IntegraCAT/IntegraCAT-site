@@ -32,7 +32,7 @@ const infoBasicas = document.getElementById("informacoes-basicas");
 const infoAvancadas = document.getElementById("informacoes-avancadas");
 // Botões
 const btnInformacoes = document.getElementById("btn-informacoes"); //Informaçoews básicas
-const btnAvancadas = document.getElementById("btn-avancadas");
+const btnDelete = document.getElementById("btn-excluir-conta");
 
 
 /* Função para alterar informações básicas do Usuário*/
@@ -57,6 +57,14 @@ function alterarCadastroBasico(){
     }
 }
 
+function deletarCadastro(){
+    const cadastroIndex = usuariosCadastrados.findIndex(user => user.id === logado.id);
+    
+    usuariosCadastrados.splice(cadastroIndex, 1);
+    sessionStorage.setItem("listaCadastrados", JSON.stringify(usuariosCadastrados));
+    sessionStorage.removeItem("usuarioAtivo")
+}
+
 function cancelarEnvio(){
     window.location.reload();
 }
@@ -69,6 +77,8 @@ imagemInput.value  = logado.fotoPerfil ;
 
 infoBasicas.addEventListener("submit", alterarCadastroBasico);
 infoBasicas.addEventListener("reset", cancelarEnvio);
+
+btnDelete.addEventListener("click", deletarCadastro);
 
 const camposBasicos = [nomeInput, cargoInput, empresaInput, imagemInput];
 
