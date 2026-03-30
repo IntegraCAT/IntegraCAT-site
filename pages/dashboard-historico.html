@@ -128,14 +128,15 @@
               <button>
                 <img src="../source/img/icons/Search.svg" alt="lupa" />
               </button>
-              <input type="text" placeholder="Pesquisar..." />
+              <input id="pesquisa" type="text" placeholder="Pesquisar..." />
             </div>
 
             <div class="filtros-grid">
               <div class="filtros-row">
                 <div class="campo">
                   <label>Período</label>
-                  <select>
+                  <select id="periodo">
+                    <option value="">Não definido...</option>
                     <option value="mes">Neste Mês</option>
                     <option value="semestre">Neste Semestre</option>
                     <option value="neste_ano">Neste Ano</option>
@@ -146,8 +147,8 @@
                 <div class="campo">
                   <label for="setor">Setor</label>
                   <select id="setor" name="setor">
-                    <option value="" disabled selected>
-                      Selecione o setor...
+                    <option value="">
+                      Não definido...
                     </option>
                     <option value="adm">Administrativo / Escritório</option>
                     <option value="logistica">Entregas / Logística</option>
@@ -164,7 +165,7 @@
                 <div class="campo">
                   <label for="nivel">Nível da ocorrência</label>
                   <select id="nivel" name="nivel">
-                    <option value="" disabled selected>Selecione o Nível da ocorrência...</option>
+                    <option value="" >Não definido...</option>
                     <option value="alto">Alto</option>
                     <option value="medio">Médio</option>
                     <option value="baixo">Baixo</option>
@@ -174,8 +175,8 @@
                 <div class="campo">
                   <label for="tipo">Tipo da Ocorrência</label>
                     <select id="tipo" name="tipo">
-                      <option value="" disabled selected>
-                        Selecione o tipo...
+                      <option value="">
+                        Não definido...
                       </option>
                       <option value="acidente_com_afastamento">
                         Acidente com Afastamento
@@ -202,9 +203,9 @@
 
               <div class="campo">
                 <label>Status</label>
-                <select>
-                  <option value="" disabled selected>
-                    Selecione o Status...
+                <select id="status">
+                  <option value="">
+                    Não definido...
                   </option>
                   <option value="aberto">Aberto</option>
                   <option value="fechado">Fechado</option>
