@@ -81,7 +81,7 @@ function criarUsuario(event) {
   sessionStorage.setItem("usuarioAtivo", JSON.stringify(novoUsuario));
   
   /* Manda para a dashboard*/
-  window.location.href = "/pages/dashboard.html"
+  window.location.href = "../pages/dashboard.html"
 }
 
 

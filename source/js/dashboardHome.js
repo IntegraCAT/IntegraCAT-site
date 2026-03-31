@@ -62,7 +62,7 @@ function mostrarAlertas() {
           <p><b>Nível da ocorrência:</b> ${nomesFormatados[item.nivel] ?? item.nivel}</p>
           <p><b>Setor:</b> ${nomesFormatados[item.setor] ?? item.setor}</p>
           <p>${item.descricao}</p>
-          <a href="/pages/dashboard-ocorrencia.html" onclick="ocorrenciaEmFoco(${i})">Ver detalhes</a>
+          <a href="../pages/dashboard-ocorrencia.html" onclick="ocorrenciaEmFoco(${i})">Ver detalhes</a>
       `;
       containerAlertas.appendChild(card);
     }

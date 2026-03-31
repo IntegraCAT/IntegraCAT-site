@@ -95,7 +95,7 @@ function criarEmpresa(event) {
   
   sessionStorage.setItem("usuarioAtivo", JSON.stringify(novaEmpresa));
   /* Manda para a dashboard*/
-  window.location.href = "/pages/dashboard.html"
+  window.location.href = "../pages/dashboard.html"
 }
 
 registerForm?.addEventListener("submit", criarEmpresa);

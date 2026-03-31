@@ -6,7 +6,7 @@ class FooterIntegraCat extends HTMLElement {
       <footer>
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="/source/img/logo integraCAT.svg" alt="Logo - IntegraCAT"/>
+          <img src="../source/img/logo integraCAT.svg" alt="Logo - IntegraCAT"/>
           <p>Segurança do Trabalho sem burocracia.</p>
         </div>
         <div class="footer-columns">
@@ -15,11 +15,11 @@ class FooterIntegraCat extends HTMLElement {
 
             <nav>
               <ul>
-                <li><a href="/index.html#home">Início</a></li>
-                <li><a href="/index.html#beneficios">Benefícios</a></li>
-                <li><a href="/index.html#sistema">Sistema</a></li>
-                <li><a href="/index.html#palestras">Palestras e Conteúdos</a></li>
-                <li><a href="/index.html#precos">Preços</a></li>
+                <li><a href="../index.html#home">Início</a></li>
+                <li><a href="../index.html#beneficios">Benefícios</a></li>
+                <li><a href="../index.html#sistema">Sistema</a></li>
+                <li><a href="../index.html#palestras">Palestras e Conteúdos</a></li>
+                <li><a href="../index.html#precos">Preços</a></li>
               </ul>
             </nav>
           </section>
@@ -44,9 +44,9 @@ class FooterIntegraCat extends HTMLElement {
                 <li><a href="">integracat@gmail.com</a></li>
                 <li><a href="">Av. Paulista, 1000 - SP</a></li>
                 <div class="redes">
-                  <a href=""><img src="/source/img/icons/linkedin.svg" alt=""></a>
-                  <a href=""><img src="/source/img/icons/instagram.svg" alt=""></a>
-                  <a href=""><img src="/source/img/icons/youtube.svg" alt=""></a>
+                  <a href=""><img src="../source/img/icons/linkedin.svg" alt=""></a>
+                  <a href=""><img src="../source/img/icons/instagram.svg" alt=""></a>
+                  <a href=""><img src="../source/img/icons/youtube.svg" alt=""></a>
                 </div>
               </ul>
             </nav>

@@ -33,7 +33,7 @@ function entrarNoUsuario(event) {
 
   if (verificandoUsuario) {
     sessionStorage.setItem("usuarioAtivo", JSON.stringify(verificandoUsuario));
-    window.location.href = "/pages/dashboard.html"
+    window.location.href = "../pages/dashboard.html"
   } else {
     alert("ID, E-mail ou Senha inválidos.");
   }
