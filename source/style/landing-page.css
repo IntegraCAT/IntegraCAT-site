@@ -6,7 +6,6 @@ main > section{
   gap: 1rem;
 }
 
-
 /*========================================
 Daqui para baixo classes da seção HOME
 ==========================================*/
@@ -16,18 +15,6 @@ Daqui para baixo classes da seção HOME
   gap: 3rem;
   background: var(--gradient-shadow-blue-90);
   animation: appear 0.8s ease-in forwards;
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-40px);
-  }
-  to{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
 }
 
 .home__texts{
@@ -99,7 +86,7 @@ Daqui para baixo classes da seção BENEFICIOS
   overflow: hidden; 
   flex: 1;
   /* ajusta e mantem o tamanho minimo usado no wrap */
-  min-width: 250px; 
+  min-width: 300px; 
   height: auto;
 }
 
@@ -173,7 +160,6 @@ Daqui para baixo classes da seção PALESTRAS
   padding: 3rem 0;
   align-items: stretch; /* Garante que os blocos tenham a mesma altura */
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 /* O card da esquerda ocupa 1 parte */
@@ -329,6 +315,7 @@ Daqui para baixo classes da seção PRECOS
 .card-precos {
   flex: 1; /* Faz com que todos dividam o espaço disponível igualmente */
   max-width: 495px;
+  min-width: 250px;
   background: var(--gradient-shadow-blue-90);
   border: 1px solid var(--color-blue-secondary);
   padding: 2rem;
@@ -406,6 +393,33 @@ Daqui para baixo classes da seção LEADS
   outline: none;/* Remove borda*/
   width: 100%;
   transition: border-bottom-color 0.3s ease;
+}
+
+/*========================================
+ANIMAÇÕES
+=========================================*/
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+  to{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.hidden{
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.8s ease-out;
+}
+.mostrar{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*========================================
