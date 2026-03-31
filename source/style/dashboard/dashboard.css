@@ -97,9 +97,12 @@ main{
   height: 16px;
   border-radius: 4px;
 }
-.cor-producao { background-color: #1a1b41; }
-.cor-logistica { background-color: #21308a; }
-.cor-escritorio { background-color: #00a4b4; }
+.cor-adm { background-color: #34495e; }        /* Cinza azulado - gestão/controle */
+.cor-logistica { background-color: #2980b9; }  /* Azul - fluxo/transporte */
+.cor-producao { background-color: #27ae60; }   /* Verde - produção/atividade */
+.cor-manutencao { background-color: #e67e22; } /* Laranja - reparo/atenção */
+.cor-ti { background-color: #8e44ad; }         /* Roxo - tecnologia */
+.cor-externo { background-color: #c0392b; }    /* Vermelho - externo/alerta */
 
 /* ==========================================
    ANIMAÇÃO DO GRÁFICO DE BARRAS
