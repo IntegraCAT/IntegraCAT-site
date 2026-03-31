@@ -61,7 +61,7 @@ function deletarCadastro(){
     usuariosCadastrados.splice(cadastroIndex, 1);
     sessionStorage.setItem("listaCadastrados", JSON.stringify(usuariosCadastrados));
     sessionStorage.removeItem("usuarioAtivo");
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 }
 
 function cancelarEnvio(){
