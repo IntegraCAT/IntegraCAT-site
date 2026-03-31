@@ -173,6 +173,7 @@ Daqui para baixo classes da seção PALESTRAS
   padding: 3rem 0;
   align-items: stretch; /* Garante que os blocos tenham a mesma altura */
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 /* O card da esquerda ocupa 1 parte */
