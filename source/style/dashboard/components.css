@@ -10,6 +10,22 @@
   top: 0; 
   background: var(--color-bg-secondary);
   gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-nav.escondida{
+  transform: translateX(-100%);
+  margin-left: -256px;
+  padding: 0;
+}
+#btn-abrir{
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 .sidebar-nav ul{
   list-style: none;
