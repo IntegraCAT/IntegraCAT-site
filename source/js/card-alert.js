@@ -92,11 +92,11 @@ atualizarContadorAlertas();
 // 1. Dias sem acidentes
 const dias = parseInt(diasH2.innerText);
 if (dias < 30) {
-  diasH2.classList.add('texto-verde');
+  diasH2.classList.add('texto-vermelho');
 } else if (dias < 60) {
   diasH2.classList.add('texto-amarelo'); 
 } else {
-  diasH2.classList.add('texto-vermelho');
+  diasH2.classList.add('texto-verde');
 }
 
 // 2. Alertas Recebidos (Vermelho se for > 0, Verde se for 0)
