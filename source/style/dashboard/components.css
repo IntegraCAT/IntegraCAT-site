@@ -70,6 +70,7 @@
 .card-alert h2{
   font-size: 36px;
   font-weight: 700;
+  word-break:keep-all; 
 }
 .card-alert h3{
   font-size: 16px;

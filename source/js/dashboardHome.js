@@ -9,6 +9,7 @@ const containerAlertas = document.getElementById("container-cards");
 /* Busca as ocorrencias que já existem*/
 const ocorrenciasCadastradas = JSON.parse(sessionStorage.getItem("listaOcorrencias") || "[]");
 
+
 const nomesFormatados = {
   /*Tipo da Ocorrência */
   "acidente_com_afastamento": "Acidente com Afastamento",
