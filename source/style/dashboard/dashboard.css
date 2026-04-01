@@ -276,8 +276,8 @@ main{
   background-color: var(--color-bg-secondary);
 }
 
-.configurcoes section > h3{
-  margin-bottom: 16px;
+.configuracoes section > h3{
+  margin-bottom: 1rem;
 }
 
 .informacoes{
@@ -307,14 +307,14 @@ main{
   color: var(--color-light-primary);
 }
 
-.configuracaes-basicas{
+.configuracoes-basicas{
   display: flex;
   flex-direction: row;
   gap: 32px;
 
   align-items: flex-start;
 }
-.configuracaes-basicas > div:last-child{
+.configuracoes-basicas > div:last-child{
   flex: 1;
 }
 
