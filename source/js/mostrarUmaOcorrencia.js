@@ -72,7 +72,7 @@ mainContainer.innerHTML = `
             </div>
         </article>
         
-        <a href="/pages/dashboard-editarOcorrencia.html" class="btn-green">EDITAR</a>
+        <a href="../pages/dashboard-editarOcorrencia.html" class="btn-green">EDITAR</a>
     </section>
     <!-- Gerada por script -->
 `;

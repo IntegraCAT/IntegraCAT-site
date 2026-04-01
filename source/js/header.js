@@ -34,5 +34,5 @@ btnMenu.addEventListener('click', () => {
 const logado = JSON.parse(sessionStorage.getItem("usuarioAtivo"));
 if (logado) {
   const btnEntrar = document.getElementById("btn-entrar-conta")
-  btnEntrar.href = "../pages/dashboard.html"
+  btnEntrar.href = "./pages/dashboard.html"
 }
