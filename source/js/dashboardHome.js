@@ -76,5 +76,15 @@ function mostrarAlertas() {
   }
 }
 
+function ocorrenciaEmFoco(value) {
+  if (value < 0 || value >= ocorrenciasCadastradas.length) {
+    console.error("Índice inválido:", value);
+    return;
+  }
+
+  sessionStorage.setItem("ocorrenciaSelecionada", JSON.stringify(ocorrenciasCadastradas[value]));
+  sessionStorage.setItem("indexOcorrenciaSelecionada", JSON.stringify(value));
+}
+
 if (containerAlertas) mostrarAlertas();
 
