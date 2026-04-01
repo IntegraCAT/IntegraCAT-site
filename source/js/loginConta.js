@@ -3,10 +3,10 @@ const dadosNoStorage = sessionStorage.getItem("listaCadastrados");
 // Caso usuários salvos não tenha nada salvo ainda
 const usuarioPadrao = {
     identidade: "IntegraCAT",
-    id: "123",
+    id: "IntegraCAT",
     cnpj: "",
     email: "entrar@integracat.com",
-    senha: "123",
+    senha: "seguranca",
     cargo: "",
     empresaVinculado: "",
     fotoPerfil: ""
