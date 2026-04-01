@@ -4,7 +4,12 @@ class FooterIntegraCat extends HTMLElement {
     const isIndex = window.location.pathname.endsWith("index.html")
     
     // 2. Define o prefixo: se for index, não volta pasta. Se não, usa ../
-    const pfx = isIndex ? "./" : "../";
+    const pfx = "";
+    if (isIndex) {
+      pfx = "./"; 
+    } else{
+      pfx = "../";
+    }
 
     this.innerHTML = `
       <footer>
