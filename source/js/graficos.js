@@ -46,13 +46,12 @@ const textoExterno = document.getElementById('texto-externo');
 // Soma tudo para achar o total
 const totalOcorrencias = dadosSetores.adm + dadosSetores.logistica + dadosSetores.producao + dadosSetores.manutencao + dadosSetores.ti + dadosSetores.externo;
 
-// Calcula a porcentagem de cada um (Ex: 40 / 100 = 0.40)
-const pctAdm = dadosSetores.adm / totalOcorrencias;
-const pctLogistica = dadosSetores.logistica / totalOcorrencias;
-const pctProducao = dadosSetores.producao / totalOcorrencias;
-const pctManutencao = dadosSetores.manutencao / totalOcorrencias;
-const pctTi = dadosSetores.ti / totalOcorrencias;
-const pctExterno = dadosSetores.externo / totalOcorrencias;
+const pctAdm = totalOcorrencias === 0 ? 0 : dadosSetores.adm / totalOcorrencias;
+const pctLogistica = totalOcorrencias === 0 ? 0 : dadosSetores.logistica / totalOcorrencias;
+const pctProducao = totalOcorrencias === 0 ? 0 : dadosSetores.producao / totalOcorrencias;
+const pctManutencao = totalOcorrencias === 0 ? 0 : dadosSetores.manutencao / totalOcorrencias;
+const pctTi = totalOcorrencias === 0 ? 0 : dadosSetores.ti / totalOcorrencias;
+const pctExterno = totalOcorrencias === 0 ? 0 : dadosSetores.externo / totalOcorrencias;
 
 // Atualiza os textos da legenda na tela (Multiplica por 100 pra virar "40%")
 textoAdm.innerText = Math.round(pctAdm * 100) + '%';
