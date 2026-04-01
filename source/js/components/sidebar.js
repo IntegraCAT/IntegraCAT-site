@@ -80,7 +80,7 @@ class SidebarIntegraCat extends HTMLElement {
             </a>
           </li>
           <li>
-            <a id="btn-sair" href="../index.html">
+            <a id="btn-sair" onclick="sairDaConta()" href="../index.html">
               <img
                 src="../source/img/icons/dashboard-icons/leave-icon.svg"
                 alt="sair-icon"
