@@ -1,7 +1,7 @@
 class FooterIntegraCat extends HTMLElement {
   connectedCallback() {
     // 1. Verifica se estamos na index ou na raiz
-    const isIndex = window.location.pathname.endsWith("index.html")
+    const isIndex = window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("IntegraCAT-site/")
     
     // 2. Define o prefixo: se for index, não volta pasta. Se não, usa ../
     let pfx = "";
