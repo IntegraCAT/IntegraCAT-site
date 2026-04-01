@@ -14,6 +14,8 @@
 
 O **IntegraCAT** é uma plataforma B2B (Business-to-Business) focada em revolucionar a Segurança do Trabalho nas empresas. Através de um ecossistema digital inteligente, conectamos a operação ao setor de gestão (SESMT e RH), eliminando a burocracia do papel e focando na prevenção ativa de acidentes.
 
+Acesse aqui: <a href="https://integracat.github.io/IntegraCAT-site/">https://integracat.github.io/IntegraCAT-site/
+
 ---
 
 ## 🎯 Objetivo Geral
