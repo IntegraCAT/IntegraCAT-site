@@ -53,7 +53,7 @@ class SidebarIntegraCat extends HTMLElement {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="../pages/dashboard-palestras.html">
               <img
                 src="../source/img/icons/dashboard-icons/lecture-icon.svg"
                 alt="palestras-icon"
@@ -62,7 +62,7 @@ class SidebarIntegraCat extends HTMLElement {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="../pages/dashboard-conteudos.html">
               <img
                 src="../source/img/icons/dashboard-icons/content-icon.svg"
                 alt="conteudos-icon"

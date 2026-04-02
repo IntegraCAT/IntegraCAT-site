@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../source/style/reset.css" />
+  <link rel="stylesheet" href="../source/style/variables.css" />
+  <link rel="stylesheet" href="../source/style/dashboard/dashboard.css" />
+  <link rel="stylesheet" href="../source/style/components.css" />
+  <link rel="stylesheet" href="../source/style/dashboard/components.css" />
+
+  <link rel="shortcut icon" href="../source/img/logo integraCAT-nolet.svg" type="image/x-icon" />
+
+  <title>Dashboard - integraCAT</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <app-sidebar></app-sidebar>
+
+    <main id="main-container" class="content">
+      <div class="title-header">
+        <h1>Nossos Conteúdos</h1>
+        <a href="../pages/dashboard.html">← Voltar</a>
+      </div>
+
+      <section class="content-section">
+        <h2 class="visually-hidden">Lista de conteúdos</h2>
+        <div class="ordem-select">
+          <label for="ordem">Ordem</label>
+          <select name="ordem" id="ordem">
+            <option value="recente">Mais recente</option>
+            <option value="antigo">Mais antigo</option>
+            <option value="mais-visto">Mais visto</option>
+          </select>
+        </div>
+
+        <section id="container-conteudos">
+          <article class="conteudo-card">
+            <img src="../source/img/people/user-default.png" alt="">
+            <div>
+              <h3>Titulo do conteudo</h3>
+              <p><strong>Categoria: </strong>Segurança, EPI.</p>
+              <p><strong>Tempo para leitura:</strong> 10 minutoss</p>
+              <p>Hà 1 dia</p>
+              <div>
+                <button class="btn-green">ACESSAR</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+      </section>
+    </main>
+  </div>
+  <script src="../source/js/components/sidebar.js" defer></script>
+  <script src="../source/js/mostrarUmaOcorrencia.js"></script>
+  <script src="../source/js/dashboardSideNav.js"></script>
+
+
+  <!-- API VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+</body>
+
+</html>
