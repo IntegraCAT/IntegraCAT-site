@@ -254,7 +254,7 @@ Daqui para baixo classes da seção CONTEUDOS que está dentro da seção PALEST
   flex-wrap: wrap;
 }
 .container-card-conteudos > .card-conteudo {
-  flex: 1.6 1 350px;
+  flex: 1 1 350px;
 }
 .container-card-conteudos__menores{
   display: flex;
