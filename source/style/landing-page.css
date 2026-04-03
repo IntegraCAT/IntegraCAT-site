@@ -9,6 +9,26 @@ main > section{
   gap: 1rem;
 }
 
+
+.title-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.title-logo img[alt="logo - IntegraCAT"] {
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+}
+
+.lettering-logo {
+  height: 64px;
+  width: auto; 
+  max-width: 80px; /* opcional para limitar */
+  object-fit: contain;
+}
+
 /*========================================
 Daqui para baixo classes da seção HOME
 ==========================================*/
