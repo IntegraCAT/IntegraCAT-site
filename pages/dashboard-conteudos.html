@@ -49,38 +49,38 @@
             <div class="ordem-select">
               <label for="ordem">Categoria</label>
               <select name="ordem" id="categoria">
+                <option value="" disabled selected>Selecione categoria...</option>
                 <optgroup label="Segurança do Trabalho">
-                  <option>Segurança</option>
-                  <option>EPI</option>
-                  <option>CIPA</option>
-                  <option>Ergonomia</option>
+                  <option value="seguranca">Segurança</option>
+                  <option value="epi">EPI</option>
+                  <option value="cipa">CIPA</option>
+                  <option value="ergonomia">Ergonomia</option>
                 </optgroup>
 
                 <optgroup label="Saúde">
-                  <option>Saúde do Trabalhador</option>
-                  <option>Saúde Mental</option>
-                  <option>Qualidade de Vida</option>
+                  <option value="saude_do_trabalhador">Saúde do Trabalhador</option>
+                  <option value="saude_mental">Saúde Mental</option>
+                  <option value="qualidade_de_vida">Qualidade de Vida</option>
                 </optgroup>
 
                 <optgroup label="Recursos Humanos">
-                  <option>Treinamento</option>
-                  <option>Liderança</option>
-                  <option>Cultura Organizacional</option>
+                  <option value="treinamento">Treinamento</option>
+                  <option value="lideranca">Liderança</option>
+                  <option value="cultura_organizacional">Cultura Organizacional</option>
                 </optgroup>
 
                 <optgroup label="Gestão e Leis">
-                  <option>Compliance</option>
-                  <option>Legislação Trabalhista</option>
-                  <option>Gestão de Riscos</option>
+                  <option value="compliance">Compliance</option>
+                  <option value="legistalacao_trabalhista">Legislação Trabalhista</option>
+                  <option value="gestao_de_riscos">Gestão de Riscos</option>
                 </optgroup>
               </select>
             </div>
             <div class="ordem-select">
               <label for="ordem">Ordem</label>
               <select name="ordem" id="ordem">
-                <option value="recente">Mais recente</option>
-                <option value="antigo">Mais antigo</option>
-                <option value="mais-visto">Mais visto</option>
+                <option value="mais-recente">Mais recente</option>
+                <option value="mais-antigo">Mais antigo</option>
               </select>
             </div>
           </section>
@@ -103,6 +103,7 @@
       </main>
     </div>
     <script src="../source/js/components/sidebar.js" defer></script>
+    <script src="../source/js/mostrarConteudos.js"></script>
     <script src="../source/js/dashboardSideNav.js"></script>
 
     <!-- API VLibras -->
