@@ -26,6 +26,9 @@ main{
   gap: 2rem;
   flex-wrap: wrap;
 }
+.gallery-cards{
+  display: flex;
+}
 
 /* Classes dinâmicas para o JS aplicar no dashboard */
 .texto-verde {
@@ -373,4 +376,15 @@ main{
 select, option{
   color: white;
   background-color: var(--color-bg-secondary);
+}
+
+/*=========================================
+    RESPONSIVIDADE
+=========================================*/
+
+@media (max-width: 768px){
+  .gallery-cards{
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
