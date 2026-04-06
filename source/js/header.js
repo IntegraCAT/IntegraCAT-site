@@ -16,6 +16,12 @@ window.addEventListener('scroll', () => {
   }
   // Atualiza a última posição para a próxima verificação
   ultimoScroll = scrollAtual;
+
+  if(scrollAtual > 100){
+    headerNav.classList.add('fundo');
+  }else{
+    headerNav.classList.remove('fundo');
+  }  
 });
 
 

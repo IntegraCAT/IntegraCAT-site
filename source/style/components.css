@@ -21,11 +21,15 @@ header{
   width: 100%;
   top: 0;
   z-index: 3;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .header-nav--escondido {
   transform: translateY(-100%); 
 }
+.header-nav.fundo {
+  background-color: var(--color-bg-primary);
+}
+
 .header-nav img{
   justify-self: start;
   height: 90%;
