@@ -453,6 +453,11 @@ RESPONSIVIDADE
   main > section{
     padding: 4rem 3rem;
   }
+
+  .lettering-logo {
+    display: none;
+  }
+
   .beneficios-descricao{
     flex-direction: column;
     gap: 1.5rem;
