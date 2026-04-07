@@ -129,6 +129,7 @@ RESPONSIVIDADE
 @media (max-width: 768px) {
     #autenticacao {
         padding: 3rem 1.5rem;
+        width: 80%;
     }
     .container-opcoes {
         flex-direction: column;
