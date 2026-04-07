@@ -40,7 +40,6 @@ Daqui para baixo classes da seção HOME
     min-height: 90vh;
     gap: 3rem;
     background: var(--gradient-shadow-blue-90);
-    animation: appear 0.8s ease-in forwards;
 }
 
 .home__texts {
@@ -474,26 +473,17 @@ Daqui para baixo classes da seção LEADS
 ANIMAÇÕES
 =========================================*/
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-40px);
-    }
-    to {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
+.hidden {
+    /* serve só pro JavaScript achar a section */
 }
 
-.hidden {
+.hidden > * {
     opacity: 0;
     transform: translateY(-40px);
     transition: all 0.8s ease-out;
 }
 
-.mostrar {
+.hidden.mostrar > * {
     opacity: 1;
     transform: translateY(0);
 }
