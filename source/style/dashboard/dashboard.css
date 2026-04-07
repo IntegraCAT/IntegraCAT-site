@@ -28,6 +28,8 @@ main{
 }
 .gallery-cards{
   display: flex;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 /* Classes dinâmicas para o JS aplicar no dashboard */
