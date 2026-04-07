@@ -343,4 +343,7 @@ RESPONSIVIDADE
     .footer-container {
         padding: 4rem 3rem;
     }
+    .voltar-seta {
+        width: 30px;
+    }
 }

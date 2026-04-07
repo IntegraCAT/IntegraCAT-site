@@ -1,56 +1,80 @@
-main{
-  justify-items: center;
-  padding: 64px 0px;
+main {
+    justify-items: center;
+    padding: 64px 0px;
 }
-main > h1{
-  font-size: 32px;
-  padding-bottom: 32px;
+
+main>h1 {
+    font-size: 32px;
+    padding-bottom: 32px;
 }
 
 .title-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
 }
 
 .title-logo img[alt="logo - IntegraCAT"] {
-  height: 56px;
-  width: 56px;
-  object-fit: contain;
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
 }
 
 .lettering-logo {
-  height: 64px;
-  width: auto; 
-  max-width: 80px; /* opcional para limitar */
-  object-fit: contain;
+    height: 64px;
+    width: auto;
+    max-width: 80px;
+    /* opcional para limitar */
+    object-fit: contain;
 }
+
+
 /*========================================
 Daqui para baixo classes dentro de AUTENTICACAO
 ==========================================*/
-#autenticacao{
-  padding: 56px;
-  border-radius: 20px;
-  background: var(--color-bg-secondary);
-  width: 70%;
-  max-width: fit-content;
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
-  align-items: center;
 
-}
-#autenticacao h1{
-  font-size: 28px;
+#autenticacao {
+    padding: 56px;
+    border-radius: 20px;
+    background: var(--color-bg-secondary);
+    width: 70%;
+    max-width: fit-content;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container-btn{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#autenticacao h1 {
+    font-size: 28px;
 }
 
-.container-btn > .btn-purple{
-  font-size: 24px;
+.container-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-btn>.btn-purple {
+    font-size: 24px;
+}
+
+
+/*========================================
+RESPONSIVIDADE
+=========================================*/
+
+@media (max-width: 768px) {
+    #autenticacao {
+        padding: 3rem 1.5rem;
+        width: 80%;
+    }
+    .container-opcoes {
+        flex-direction: column;
+        align-items: start;
+    }
+    .container-btn>.btn-purple {
+        font-size: 20px;
+    }
 }
