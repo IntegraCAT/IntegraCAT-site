@@ -5,7 +5,7 @@ main{
   display: flex;
 }
 
-.content {
+.content, .content-historico {
   flex: 1; 
   padding: 4rem;
   display: flex;
@@ -13,7 +13,7 @@ main{
   gap: 1.5rem;
 }
 
-.content h1{
+.content h1, .content-historico h1{
   font-size: 32px;
 }
 
@@ -28,6 +28,8 @@ main{
 }
 .gallery-cards{
   display: flex;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 /* Classes dinâmicas para o JS aplicar no dashboard */
@@ -383,8 +385,83 @@ select, option{
 =========================================*/
 
 @media (max-width: 768px){
+  .content, .content-historico{
+    flex-direction: column;
+  }
   .gallery-cards{
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  .container-pizza{
+    flex-direction: column;
+  }
+  .card-grafico{
+    padding: 1.5rem;
+  }
+  .content{
+    padding: 2rem;
+    width: 100vw;
+  }
+  .content-historico{
+    padding: 0;
+    justify-content: center;
+  }
+  .content h1{
+    font-size: 26px;
+    text-align: center;
+  }
+  .content-historico h1{
+    font-size: 26px;
+    padding: 2rem 2rem 0;
+    text-align: center;
+  }
+  #section-resume{
+    padding: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  .card-ocorrencia, .card-resultado {
+    padding: 1.5rem;
+  }
+
+  /* HISTÓRICO */
+  .filtros-row{
+    flex-direction: column;
+  }
+  .title-header{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .resultado-grid{
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .content-section{
+    padding: 2rem 1.5rem;
+    gap: 3rem;
+  }
+  #resultados{
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* Criar ocorrência */
+  .form-row{
+    flex-direction: column;
+  }
+  .container-btn{
+    flex-direction: column;
+  }
+
+  /* CONFIGURAÇÕES */
+  .configuracoes-basicas{
+    flex-direction: column;
+  }
+  .configuracoes-basicas div{
+    width: 100%;
+  }
+  #alterar-foto {
+    width: 200px; 
+    height: 200px;
   }
 }
