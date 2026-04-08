@@ -172,6 +172,7 @@ input:focus{
 .conteudo-card > div{
   width: 100%;
   display: flex;
+  gap: 0.875rem;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -205,6 +206,7 @@ input:focus{
 .palestra-card > div{
   width: 100%;
   display: flex;
+  gap: 0.875rem;
   flex-direction: column;
   justify-content: space-between;
 }
