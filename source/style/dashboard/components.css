@@ -11,17 +11,29 @@
   background: var(--color-bg-secondary);
   gap: 2rem;
   transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
 }
 .sidebar-nav.escondida{
-  transform: translateX(-100%);
-  margin-left: -256px;
-  padding: 0;
+  width: 72px;
+  padding: 1.5rem 1rem;
+  white-space: nowrap;
+  gap: 1rem;
+}
+.sidebar-nav p,
+.title-logo img[alt="letreiro - IntegraCAT"] {
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+.sidebar-nav.escondida p,
+.sidebar-nav.escondida .title-logo{
+  opacity: 0;
+  pointer-events: none;
 }
 #btn-abrir{
   display: none;
   position: fixed;
   top: 1.5rem;
-  left: 1.5rem;
+  left: 1.2rem;
   z-index: 10;
   background: transparent;
   border: none;
@@ -231,6 +243,7 @@ input:focus{
     left: 0;
     height: 100vh; 
     max-width: 85vw; 
+    width: 256px;
     z-index: 999; 
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5); 
     transform: translateX(0);
