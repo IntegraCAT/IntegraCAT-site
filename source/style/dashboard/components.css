@@ -250,4 +250,23 @@ input:focus{
     border: none;
     cursor: pointer;
   }
+
+  /* PALESTRAS E CONTEÚDOS*/
+  .palestra-card{
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .palestra-card div{
+    gap: 0.875rem;
+  }
+  .container-ordem{
+    flex-direction: column;
+  }
+  .conteudo-card{
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .conteudo-card div{
+    gap: 0.875rem;
+  }
 }
