@@ -47,32 +47,33 @@
 
         <section class="container-card-alert">
           <h2 class="visually-hidden">Resumo de Segurança</h2>
-
-          <article class="card-alert">
-            <h2 id="valor-dias">20</h2>
+          <div class="gallery-cards">
+            <article class="card-alert">
+              <h2 id="valor-dias">20</h2>
             <h3>Dias sem acidentes</h3>
-          </article>
-          <article class="card-alert">
-            <h2 id="valor-alertas">02</h2>
-            <h3>Alertas em aberto</h3>
-          </article>
-          <article class="card-alert">
-            <h2 id="valor-risco">Baixo</h2>
-            <h3>Nível de risco atual</h3>
-          </article>
-          <article class="card-alert">
-            <h2 id="valor-treinamentos">0</h2>
-            <h3>Treinamentos Vencendo</h3>
-          </article>
+            </article>
+            <article class="card-alert">
+              <h2 id="valor-alertas">02</h2>
+              <h3>Alertas em aberto</h3>
+            </article>
+            <article class="card-alert">
+              <h2 id="valor-risco">Baixo</h2>
+              <h3>Nível de risco atual</h3>
+            </article>
+            <article class="card-alert">
+              <h2 id="valor-treinamentos">0</h2>
+              <h3>Treinamentos Vencendo</h3>
+            </article>
+          </div>
         </section>
 
         <section class="container-card-grafico">
           <h2 class="visually-hidden">Graficos de Segurança</h2>
-
-          <article class="card-grafico">
-            <h3>Ocorrências por Setor</h3>
-
-            <div class="container-pizza">
+          <div class="gallery-cards">
+            <article class="card-grafico">
+              <h3>Ocorrências por Setor</h3>
+              
+              <div class="container-pizza">
               <table
                 class="charts-css pie multiple hide-data"
                 id="grafico-pizza"
@@ -125,14 +126,13 @@
                   <span id="texto-externo"> 30%</span> Campo / Operações Externas
                 </li>
               </ul>
-            </div>
-          </article>
-          <article class="card-grafico">
-            <h3>Alertas nos últimos 6 meses</h3>
+            </article>
+            <article class="card-grafico">
+              <h3>Alertas nos últimos 6 meses</h3>
 
             <table
-              class="charts-css column hide-data show-primary-axis show-labels data-spacing-10"
-              id="grafico-alertas"
+            class="charts-css column hide-data show-primary-axis show-labels data-spacing-10"
+            id="grafico-alertas"
             >
               <tbody>
                 <tr>
@@ -162,7 +162,7 @@
                 <tr>
                   <th scope="row">Fev</th>
                   <td
-                    style="--size: 0.4; background-image: var(--gradient-green)"
+                  style="--size: 0.4; background-image: var(--gradient-green)"
                   ></td>
                 </tr>
                 <tr>
@@ -174,6 +174,7 @@
               </tbody>
             </table>
           </article>
+        </div>
         </section>
 
         <section id="section-resume">

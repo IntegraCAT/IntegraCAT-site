@@ -1,302 +1,352 @@
+header {
+    background: var(--gradient-shadow-blue);
+    height: 80px;
+    width: 100%;
+}
 
-header{
-  background: var(--gradient-shadow-blue);
-  height: 80px;
-  width: 100%;
+.menu {
+    display: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
-.menu{
-  display: none;
-  border: none;
-  cursor: pointer;
-  background: transparent;
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 4%;
+    font-weight: 600;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    transition: all 0.2s ease-in-out;
 }
-.header-nav{
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  align-items: center;
-  padding: 0 4%;
-  font-weight: 600;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 3;
-  transition: all 0.2s ease-in-out;
-}
+
 .header-nav--escondido {
-  transform: translateY(-100%); 
-}
-.header-nav.fundo {
-  background-color: var(--color-bg-primary);
+    transform: translateY(-100%);
 }
 
-.header-nav img{
-  justify-self: start;
-  height: 90%;
+.header-nav.fundo {
+    background-color: var(--color-bg-primary);
 }
-.header-nav ul { 
-  display: flex;
-  gap: 2.5rem;
-  margin-left: 3rem;
+
+.header-nav img {
+    justify-self: start;
+    height: 90%;
 }
+
+.header-nav ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 3rem;
+}
+
 .header-nav li {
-  display: block;
+    display: block;
 }
-.header-nav a{
-  font-weight: 500;
-  position: relative;
+
+.header-nav a {
+    font-weight: 500;
+    position: relative;
 }
-.header-link::after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #ffffff;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
+
+.header-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
 }
-.header-nav a:hover::after{
-  transform: scaleX(1);
+
+.header-nav a:hover::after {
+    transform: scaleX(1);
 }
-.header-nav .btn-desktop{
-  padding: 0.8rem 1.5rem;
+
+.header-nav .btn-desktop {
+    padding: 0.8rem 1.5rem;
 }
-.btn-mobile{
-  display: none;
+
+.btn-mobile {
+    display: none;
 }
-.voltar-seta{
-  object-fit: contain;
-  width: 45px;
+
+.voltar-seta {
+    object-fit: contain;
+    width: 36px;
 }
+
 
 /*========================================
 Daqui para baixo classes do FOOTER
 ==========================================*/
 
 footer {
-  padding-top: 128px;
-  background: var(--gradient-shadow-blue-90);
+    padding-top: 128px;
+    background: var(--gradient-shadow-blue-90);
 }
 footer h4{
   cursor: default;
 }
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem 5rem; 
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
-  max-width: 250px;
+    max-width: 250px;
 }
 
-.footer-logo img{
-  width: 200px;
+.footer-logo img {
+    width: 200px;
 }
 
 .footer-columns {
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .footer-columns h4 {
-  margin-bottom: 20px;
-  text-transform: uppercase;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .footer-columns ul {
-  list-style: none; 
-  padding: 0;       
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;        
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .footer-columns a {
-  color: inherit;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
 .footer-columns a:hover {
-  color: var(--gradient-purple); 
+    color: var(--gradient-purple);
 }
-.redes{
-  display: flex;
-  gap: 1rem;
+
+.redes {
+    display: flex;
+    gap: 1rem;
 }
 
 small {
-  display: block;
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  width: 100%;
-  opacity: 0.6;
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    opacity: 0.6;
 }
+
 
 /*========================================
 Daqui para baixo classes do btn-green
 ==========================================*/
 
 .btn-green {
-  align-self: center;
-  width: fit-content;
-  font-weight: 700;
-  color: black;
-  position: relative; /* Necessário para o ::before */
-  z-index: 1;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  border: 0;
-  background-image: var(--gradient-green);
-  box-shadow: 1px 1px 6px rgba(88, 255, 158, 0.457);
-  cursor: pointer;
-  transition: color 500ms ease-in-out;
+    align-self: center;
+    width: fit-content;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    /* Necessário para o ::before */
+    z-index: 1;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 0;
+    background-image: var(--gradient-green);
+    box-shadow: 1px 1px 6px rgba(88, 255, 158, 0.457);
+    cursor: pointer;
+    transition: color 500ms ease-in-out;
 }
 
+
 /* uma "camada" por cima com o gradiente roxo */
+
 .btn-green::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--gradient-green-dark);
-  z-index: -1;
-  opacity: 0; /* Começa invisível */
-  transition: opacity 500ms ease-in-out;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--gradient-green-dark);
+    z-index: -1;
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 500ms ease-in-out;
 }
-.btn-green:hover{
-  color: #ffffff;
+
+.btn-green:hover {
+    color: #ffffff;
 }
+
 .btn-green:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
+
 
 /*========================================
 Daqui para baixo classes do btn-purple
 ==========================================*/
-.btn-purple{
-  align-self: center;
-  width: fit-content;
-  font-weight: 700;
-  position: relative; /* Necessário para o ::before */
-  z-index: 1;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  border: 0;
-  color: white;
-  background-image: var(--gradient-purple);
-  box-shadow: 1px 1px 6px rgba(223, 96, 255, 0.457);
-  cursor: pointer;
-  transition: color 500ms ease-in-out;
+
+.btn-purple {
+    align-self: center;
+    width: fit-content;
+    font-weight: 700;
+    position: relative;
+    /* Necessário para o ::before */
+    z-index: 1;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    background-image: var(--gradient-purple);
+    box-shadow: 1px 1px 6px rgba(223, 96, 255, 0.457);
+    cursor: pointer;
+    transition: color 500ms ease-in-out;
 }
 
+
 /* uma "camada" por cima com o gradiente roxo */
+
 .btn-purple::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--gradient-purple-dark);
-  z-index: -1;
-  opacity: 0; /* Começa invisível */
-  transition: opacity 500ms ease-in-out;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--gradient-purple-dark);
+    z-index: -1;
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 500ms ease-in-out;
 }
 
 .btn-purple:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
-.btn-purple:hover{
-  color: hsl(305, 100%, 78%);
+
+.btn-purple:hover {
+    color: hsl(305, 100%, 78%);
 }
+
+
 /*========================================
 Daqui para baixo classes do btn-red
 ==========================================*/
+
 .btn-red {
-  align-self: center;
-  width: fit-content;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  position: relative; /* Necessário para o ::before */
-  z-index: 1;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  border: 0;
-  background: var(--gradient-red);
-  box-shadow: 1px 1px 6px rgba(255, 24, 24, 0.457);
-  cursor: pointer;
-  transition: color 500ms ease-in-out;
+    align-self: center;
+    width: fit-content;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    /* Necessário para o ::before */
+    z-index: 1;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 0;
+    background: var(--gradient-red);
+    box-shadow: 1px 1px 6px rgba(255, 24, 24, 0.457);
+    cursor: pointer;
+    transition: color 500ms ease-in-out;
 }
 
+
 /* uma "camada" por cima com o gradiente roxo */
+
 .btn-red::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--gradient-red-dark);
-  z-index: -1;
-  opacity: 0; /* Começa invisível */
-  transition: opacity 500ms ease-in-out;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--gradient-red-dark);
+    z-index: -1;
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 500ms ease-in-out;
 }
 
 .btn-red:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
-.btn-red:hover{
-  color: #f18888;
+
+.btn-red:hover {
+    color: #f18888;
 }
+
 
 /*========================================
 RESPONSIVIDADE
 =========================================*/
 
-@media (max-width: 768px){
-  .menu{
-    display: flex;
-  }
-  .btn-desktop{
-    display: none;
-  }
-  .btn-mobile{
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem auto 0 auto;
-  }
-  .header-nav{
-    padding: 0 2rem;
-  }
-  .header-nav ul{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-bg-primary);
-    flex-direction: column;
-    padding: 2rem 0;
-    display: none;
-    gap: 0.5rem;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-  }
-  .header-nav li{
-    display: block;
-    width: 100%;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  .header-nav ul.menu-aberto{
-    display: flex;
-  }
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+    }
+    .btn-desktop {
+        display: none;
+    }
+    .btn-mobile {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        margin: 0.5rem auto 0 auto;
+    }
+    .header-nav {
+        padding: 0 2rem;
+    }
+    .header-nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg-primary);
+        flex-direction: column;
+        padding: 2rem 0;
+        display: none;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .header-nav li {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .header-nav ul.menu-aberto {
+        display: flex;
+    }
+    .footer-container {
+        padding: 4rem 3rem;
+    }
+    .voltar-seta {
+        width: 30px;
+    }
+    
 }
-
-

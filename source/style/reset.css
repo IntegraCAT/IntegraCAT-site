@@ -6,14 +6,18 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     animation: entradaSuave 0.4s ease-in-out;
     background: var(--color-bg-primary);
 }
 
 @keyframes entradaSuave {
-  from { opacity: 0.3; }
-  to { opacity: 1; }
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 a {
@@ -21,56 +25,75 @@ a {
     font-weight: 700;
 }
 
+
 /* Aplicando em todos os títulos H1, H2 e H3 */
-h1, h2, h3, h4 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700; /* Negrito para títulos */
-  font-style: normal;
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* Negrito para títulos */
+    font-style: normal;
 }
-h1{
+
+h1 {
     font-size: 3.5rem;
 }
-h2{
+
+h2 {
     font-size: 2.25rem;
 }
-h3{
+
+h3 {
     font-size: 1.75rem;
 }
-h4{
+
+h4 {
     font-size: 1.25rem;
 }
 
-button{
+button {
     color: blueviolet;
 }
 
 .visually-hidden {
-    position: absolute; /* Remove o elemento do fluxo normal */
-    width: 1px;        /* Tamanho mínimo para manter o espaço */
-    height: 1px;       /* Tamanho mínimo para manter o espaço */
-    margin: -1px;      /* Retira qualquer margem */
-    padding: 0;        /* Remove padding */
-    overflow: hidden;   /* Oculta qualquer excesso de conteúdo */
-    clip: rect(0, 0, 0, 0); /* Para esconder visualmente */
-    border: 0;         /* Remove bordas */
+    position: absolute;
+    /* Remove o elemento do fluxo normal */
+    width: 1px;
+    /* Tamanho mínimo para manter o espaço */
+    height: 1px;
+    /* Tamanho mínimo para manter o espaço */
+    margin: -1px;
+    /* Retira qualquer margem */
+    padding: 0;
+    /* Remove padding */
+    overflow: hidden;
+    /* Oculta qualquer excesso de conteúdo */
+    clip: rect(0, 0, 0, 0);
+    /* Para esconder visualmente */
+    border: 0;
+    /* Remove bordas */
 }
+
 
 /*========================================
 RESPONSIVIDADE
 =========================================*/
 
-@media (max-width: 768px){
-    h1{
-        font-size: 3rem;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.35rem;
     }
-    h2{
-        font-size: 2rem;
+    h2 {
+        font-size: 1.875rem;
     }
-    h3{
+    h3 {
         font-size: 1.5rem;
     }
-    h4{
+    h4 {
         font-size: 1rem;
     }
 }
