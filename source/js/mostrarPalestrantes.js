@@ -5,8 +5,8 @@ const selectOrdem = document.getElementById("ordem");
 // Exemplo de dados 
 const listaPalestrantes = [
     {
-        nome: "Ana Silva",
-        imagemPerfil: "../source/img/ana.png",
+        nome: "Jaqueline Costa",
+        imagemPerfil: "../source/img/people/palestrantes/Jaqueline.jpg",
         especialidades: ["seguranca", "epi"],
         descricao: "Especialista em normas regulamentadoras com 10 anos de experiência",
         avaliacao: 4,
@@ -14,7 +14,7 @@ const listaPalestrantes = [
     },
     {
         nome: "Carlos Souza",
-        imagemPerfil: "",
+        imagemPerfil: "../source/img/people/palestrantes/CarlosSouza.jpg",
         especialidades: ["saude_mental", "qualidade_de_vida"],
         descricao: "Psicólogo organizacional focado em bem-estar no ambiente laboral",
         avaliacao: 3,
@@ -22,7 +22,7 @@ const listaPalestrantes = [
     },
     {
         nome: "Fernanda Lima",
-        imagemPerfil: "../source/img/fernanda.png",
+        imagemPerfil: "../source/img/people/palestrantes/Fernanda.jpg",
         especialidades: ["ergonomia", "saude_do_trabalhador"],
         descricao: "Fisioterapeuta especialista em ergonomia e prevenção de lesões",
         avaliacao: 5,
@@ -30,7 +30,7 @@ const listaPalestrantes = [
     },
     {
         nome: "Roberto Alves",
-        imagemPerfil: "../source/img/roberto.png",
+        imagemPerfil: "../source/img/people/palestrantes/Roberto.jpg",
         especialidades: ["gestao_de_riscos", "compliance"],
         descricao: "Consultor em gestão de riscos corporativos e conformidade legal",
         avaliacao: 4,
@@ -38,7 +38,7 @@ const listaPalestrantes = [
     },
     {
         nome: "Juliana Martins",
-        imagemPerfil: "../source/img/juliana.png",
+        imagemPerfil: "../source/img/people/palestrantes/Juliana.jpg",
         especialidades: ["lideranca", "cultura_organizacional"],
         descricao: "Especialista em desenvolvimento de lideranças e cultura empresarial",
         avaliacao: 3,
@@ -46,18 +46,18 @@ const listaPalestrantes = [
     },
     {
         nome: "Paulo Henrique",
-        imagemPerfil: "../source/img/paulo.png",
+        imagemPerfil: "../source/img/people/palestrantes/Paulo.jpg",
         especialidades: ["treinamento", "seguranca"],
         descricao: "Instrutor de treinamentos corporativos voltados à segurança do trabalho",
         avaliacao: 4,
         participacoes: 120
     },
     {
-        nome: "Mariana Costa",
-        imagemPerfil: "../source/img/mariana.png",
+        nome: "Luana Costa",
+        imagemPerfil: "../source/img/people/palestrantes/Luana.jpg",
         especialidades: ["cipa", "legistalacao_trabalhista"],
         descricao: "Advogada especializada em legislação trabalhista e atuação da CIPA",
-        avaliacao: 2,
+        avaliacao: 5,
         participacoes: 60
     }
 ];

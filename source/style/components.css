@@ -80,7 +80,9 @@ footer {
   padding-top: 128px;
   background: var(--gradient-shadow-blue-90);
 }
-
+footer h4{
+  cursor: default;
+}
 .footer-container {
   display: flex;
   justify-content: space-between;
