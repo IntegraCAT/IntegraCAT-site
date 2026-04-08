@@ -223,3 +223,31 @@ input:focus{
   width: 24px;
   margin-right: 2px;
 }
+
+@media (max-width: 768px) {
+  .sidebar-nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    max-width: 85vw; 
+    z-index: 999; 
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5); 
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar-nav.escondida {
+    transform: translateX(-100%); 
+  }
+
+  #btn-abrir {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    z-index: 998; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

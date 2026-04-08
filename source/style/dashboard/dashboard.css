@@ -400,6 +400,7 @@ select, option{
   }
   .content{
     padding: 2rem;
+    width: 100vw;
   }
   .content-historico{
     padding: 0;
@@ -407,10 +408,12 @@ select, option{
   }
   .content h1{
     font-size: 26px;
+    text-align: center;
   }
   .content-historico h1{
     font-size: 26px;
     padding: 2rem 2rem 0;
+    text-align: center;
   }
   #section-resume{
     padding: 1.5rem;
@@ -444,6 +447,9 @@ select, option{
 
   /* Criar ocorrência */
   .form-row{
+    flex-direction: column;
+  }
+  .container-btn{
     flex-direction: column;
   }
 
