@@ -43,13 +43,21 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 0.5rem;
+  gap: 1rem;
 }
 .sidebar-nav a{
   display: flex;
   gap: 16px;
   font-size: 16px;
+}
+
+.sidebar-nav li {
+  padding: 1rem ;
+}
+
+.btn-selecionado{
+  background-color: var(--color-bg-primary);
+  border-radius: 1rem;
 }
 
 /* Logo Sidebar */
@@ -237,6 +245,8 @@ input:focus{
   width: 24px;
   margin-right: 2px;
 }
+
+
 
 @media (max-width: 768px) {
   .sidebar-nav {
