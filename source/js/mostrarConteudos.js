@@ -6,7 +6,7 @@ const selectOrdem = document.getElementById("ordem");
 const listaConteudos = [
 {
     titulo: "Importância do EPI",
-    imagemCapa: "../source/img/epi.png",
+    imagemCapa: "../source/img/content/conteudo/importanciaDoEPI.png",
     descricao: "Texto sobre equipamentos de proteção.",
     tempoLeitura: "5 min",
     categoria: ["seguranca", "epi"],
@@ -14,7 +14,7 @@ const listaConteudos = [
 },
 {
     titulo: "Ergonomia no Trabalho",
-    imagemCapa: "../source/img/ergonomia.png",
+    imagemCapa: "../source/img/content/conteudo/ergonomiaNoTrabalho.jpg",
     descricao: "Dicas para melhorar a postura e evitar lesões no ambiente de trabalho.",
     tempoLeitura: "6 min",
     categoria: ["ergonomia", "qualidade_de_vida"],
@@ -22,7 +22,7 @@ const listaConteudos = [
 },
 {
     titulo: "Saúde Mental no Ambiente Corporativo",
-    imagemCapa: "../source/img/saude_mental.png",
+    imagemCapa: "../source/img/content/conteudo/saudeMentalNoTrabalho.jpg",
     descricao: "A importância do cuidado com a saúde mental dos colaboradores.",
     tempoLeitura: "7 min",
     categoria: ["saude_mental", "qualidade_de_vida"],
@@ -30,7 +30,7 @@ const listaConteudos = [
 },
 {
     titulo: "Treinamentos de Segurança: Por que investir?",
-    imagemCapa: "../source/img/treinamento.png",
+    imagemCapa: "../source/img/content/conteudo/treinamentosDeSeguranca.png",
     descricao: "Como os treinamentos impactam na prevenção de acidentes.",
     tempoLeitura: "5 min",
     categoria: ["treinamento", "seguranca"],
@@ -38,7 +38,7 @@ const listaConteudos = [
 },
 {
     titulo: "Gestão de Riscos nas Empresas",
-    imagemCapa: "../source/img/riscos.png",
+    imagemCapa: "../source/img/content/conteudo/gestaoDeRiscos.jpg",
     descricao: "Identificação e mitigação de riscos no ambiente corporativo.",
     tempoLeitura: "8 min",
     categoria: ["gestao_de_riscos", "compliance"],
@@ -46,7 +46,7 @@ const listaConteudos = [
 },
 {
     titulo: "O papel da CIPA nas organizações",
-    imagemCapa: "../source/img/cipa.png",
+    imagemCapa: "../source/img/content/conteudo/papelDoCIPA.jpg",
     descricao: "Entenda como a CIPA contribui para a segurança do trabalho.",
     tempoLeitura: "4 min",
     categoria: ["cipa", "seguranca"],
