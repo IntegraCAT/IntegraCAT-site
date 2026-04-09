@@ -1,21 +1,16 @@
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./source/style/reset.css" />
     <link rel="stylesheet" href="./source/style/variables.css" />
@@ -23,489 +18,404 @@
     <link rel="stylesheet" href="./source/style/components.css" />
 
     <link rel="shortcut icon" href="./source/img/logo integraCAT-nolet.svg" type="image/x-icon">
-    
+
     <title>IntegraCAT</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="header-nav">
-        <div class="title-logo">
-          <img
-            src="./source/img/logo integraCAT-nolet.svg"
-            alt="logo - IntegraCAT"
-          />
-          <img class="lettering-logo"
-            src="./source/img/lettering integraCAT.svg"
-            alt="letreiro - IntegraCAT"
-          />
-        </div>
-        <button class="menu" aria-label="Abrir menu">
+        <nav class="header-nav">
+            <div class="title-logo">
+                <img src="./source/img/logo integraCAT-nolet.svg" alt="logo - IntegraCAT" />
+                <img class="lettering-logo" src="./source/img/lettering integraCAT.svg" alt="letreiro - IntegraCAT" />
+            </div>
+            <button class="menu" aria-label="Abrir menu">
           <img src="./source/img/icons/menu.svg" alt="menu" width="30px">
         </button>
-        <ul>
-          <li><a href="#beneficios" class="header-link">BENEFÍCIOS</a></li>
-          <li><a href="#sistema" class="header-link">SISTEMA</a></li>
-          <li><a href="#palestras" class="header-link">PALESTRAS</a></li>
-          <li><a href="#precos" class="header-link">PREÇOS</a></li>
-          <li><a href="#leads" class="header-link">CADASTRAR</a></li>
-          <li><a class="btn-green btn-mobile" href="./pages/entrarNaConta.html">ENTRAR</a></li>
-        </ul>
-        <a id="btn-entrar-conta" class="btn-green btn-desktop" href="./pages/entrarNaConta.html">ENTRAR</a>
-      </nav>
+            <ul>
+                <li><a href="#beneficios" class="header-link">BENEFÍCIOS</a></li>
+                <li><a href="#sistema" class="header-link">SISTEMA</a></li>
+                <li><a href="#palestras" class="header-link">PALESTRAS</a></li>
+                <li><a href="#precos" class="header-link">PREÇOS</a></li>
+                <li><a href="#leads" class="header-link">CADASTRAR</a></li>
+                <li><a class="btn-green btn-mobile" href="./pages/entrarNaConta.html">ENTRAR</a></li>
+            </ul>
+            <a id="btn-entrar-conta" class="btn-green btn-desktop" href="./pages/entrarNaConta.html">ENTRAR</a>
+        </nav>
     </header>
     <main>
-      <section id="home" class="hidden">
-        <div class="home__texts">
-          <h1>Segurança do Trabalho sem burocracia.</h1>
-          <p>
-            O IntegraCAT transforma alertas rápidos da operação em dados
-            estratégicos para a sua gestão prevenir acidentes e salvar vidas.
-          </p>
-          <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
-        </div>
-
-        <section class="container-images-home">
-          <img src="./source/img/screenShots/historico.png" alt="historico de ocorrencias" />
-          <img src="./source/img/screenShots/dashboard.png" alt="painel de gestão" />
-          <img
-            src="./source/img/screenShots/sistemaPesquisa.png"
-            alt="pesquisa"
-          />
-        </section>
-      </section>
-
-      <section id="beneficios" class="hidden">
-        <div class="beneficios-descricao">
-          <div>
-            <h2>Por que transformar sua gestão com o IntegraCAT?</h2>
-            <p>
-              Deixe os processos manuais no passado e traga a segurança da sua
-              equipe para a era digital.
-            </p>
-          </div>
-
-          <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
-        </div>
-
-        <section class="container-card-beneficios">
-          <div class="card-beneficios">
-              <div class="card-beneficios-title">
-                <img src="./source/img/icons/bell_icon.svg" alt="alerta" />
-                <h3>Alertas em Tempo Real</h3>
-              </div>
-              <p>
-                O relato sai da operação direto para o seu painel no mesmo
-                instante, permitindo ações imediatas antes que o risco vire um
-                acidente.
-              </p>
-            <img src="./source/img/screenShots/notification1.png" alt="notificação"/>
-          </div>
-
-          <div class="card-beneficios">
-              <div class="card-beneficios-title">
-                <img src="./source/img/icons/graph_icon.svg" alt="gráfico"/>
-                <h3>Gestão Centralizada</h3>
-              </div>
-              <p>
-                Diga adeus ao papel. Tenha todas as ocorrências, métricas e
-                mapeamento de riscos organizados em um único dashboard
-                inteligente.
-              </p>
-            <img src="./source/img/screenShots/graphs1.png" alt="painel"/>
-          </div>
-
-          <div class="card-beneficios">
-              <div class="card-beneficios-title">
-                <img src="./source/img/icons/shield_icon.svg" alt="escudo" />
-                <h3>Segurança Jurídica</h3>
-              </div>
-              <p>
-                Mantenha a conformidade legal da sua empresa em dia. Evite multas
-                e processos com registros padronizados e acesso rápido a todo o
-                histórico.
-              </p>
-            <img src="./source/img/screenShots/security1.png" alt="segurança e proteção"/>
-          </div>
-        </section>
-      </section>
-
-      <section id="sistema" class="hidden">
-        <div class="visao-sistemas">
-          <section class="informacao-sistemas">
-            <h2>Painel Corporativo</h2>
-            <p>
-              Acompanhe métricas em tempo real, gerencie ocorrências com
-              agilidade, visualize o status de cada setor e tome decisões
-              rápidas antes que os riscos virem acidentes.
-            </p>
-            <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
-          </section>
-          <img
-            src="./source/img/Screenshot-MacBook Pro (16inch).png"
-            alt="painel corporativo no Notebook"
-            class="img-mockup-dash"
-          />
-        </div>
-
-        <div class="visao-sistemas">
-          <img
-            src="./source/img/Screenshot-iPhone15 Pro Max.png"
-            alt="aplicativo de alerta no celular"
-            class="img-mockup-app"
-          />
-          <section class="informacao-sistemas">
-            <h2>Alerta Rápido na Palma da Mão</h2>
-            <div>
-              <p>
-                Dê voz à sua equipe com um aplicativo intuitivo que conecta o
-                problema direto à gestão. Qualquer colaborador pode reportar
-                riscos e enviar fotos do local direto do smartphone, em poucos
-                segundos.
-              </p>
-              <button class="btn-green" aria-label="Solicitar demonstração do aplicativo">SOLICITAR DEMO</button>
+        <section id="home" class="hidden">
+            <div class="home__texts">
+                <h1>Segurança do Trabalho sem burocracia.</h1>
+                <p>
+                    O IntegraCAT transforma alertas rápidos da operação em dados estratégicos para a sua gestão prevenir acidentes e salvar vidas.
+                </p>
+                <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
             </div>
-          </section>
-        </div>
-      </section>
 
-      <section id="palestras" class="hidden">
-        <h2>Conectando sua CIPA aos melhores especialistas do mercado</h2>
-
-        <section class="container-especialistas" class="hidden">
-          <div class="card-destaque">
-            <div>
-              <img
-                class="img-perfil"
-                src="./source/img/people/DraMariana.png"
-                alt="perfil"
-              />
-              <div>
-                <h4>Dra. Mariana Costa</h4>
-                <p>Médica do Trabalho e Ergonomista</p>
-                <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-              </div>
-            </div>
-            <p>
-              Foco na saúde postural e redução de afastamentos por LER/DORT.
-              Realizo blitz ergonômica nos postos e palestras interativas
-              ensinando ginástica laboral, ajustes de cadeira/monitor e cuidados
-              com o corpo.
-            </p>
-            <button class="btn-green" aria-label="é possível agendar palestra com especialista">AGENDAR PALESTRA</button>
-          </div>
-
-          <div class="grid-especialistas">
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="source/img/people/Jose.png"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>José Junior</h4>
-                  <p>Engenheiro de Segurança</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="source/img/people/DrRoberto.png"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>Dr. Roberto</h4>
-                  <p>Especialista em Ergonomia</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="./source/img/people/AnaLucia.png"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>Ana Lúcia</h4>
-                  <p>Psicóloga Organizacional</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="./source/img/people/GustavoKoler.jpg"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>Gustavo Koler</h4>
-                  <p>Técnico de Segurança</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="source/img/people/JuliaSilva.jpg"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>Júlia Silva</h4>
-                  <p>Especialista em LER/DORT</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-menor">
-              <div>
-                <img
-                  class="img-perfil"
-                  src="source/img/people/PauloJusto.png"
-                  alt="perfil"
-                />
-                <div>
-                  <h4>Paulo Justo</h4>
-                  <p>Advogado Trabalhista</p>
-                  <div class="container-estrelas">
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section id="conteudos" class="hidden">
-          <h2>Conteúdos que blindam a sua operação</h2>
-          <section class="container-card-conteudos">
-            <article class="card-conteudo">
-              <img
-                src="./source/img/content/saudeOcupacional.png"
-                alt="imagem do conteudo"
-              />
-              <div>
-                <div class="card-conteudo__texts">
-                  <h3>eSocial e Saúde Ocupacional</h3>
-                  <h4>SST em dia, zero multas</h4>
-                  <p>
-                    Entenda as principais exigências do eSocial para a Segurança
-                    do Trabalho e como a digitalização ajuda a evitar passivos
-                    trabalhistas pesados.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <section class="container-card-conteudos__menores">
-              <div class="articles">
-                <article class="card-conteudo">
-                  <img
-                  src="./source/img/content/tecnologiaOperacao.png"
-                  alt="capa do artigo"
-                  />
-                  <div class="card-conteudo__texts">
-                    <h4>A Tecnologia a Favor da Vida na Operação</h4>
-                    <p>Como dados em tempo real reduzem acidentes em até 40%.</p>
-                  </div>
-                </article>
-                <article class="card-conteudo">
-                  <img
-                  src="./source/img/content/saudeMental.png"
-                  alt="capa do artigo"
-                  />
-                <div class="card-conteudo__texts">
-                  <h4>Muito Além do Capacete: A Saúde Mental no Trabalho</h4>
-                  <p>
-                    Estratégias práticas para combater o Burnout na sua equipe.
-                  </p>
-                </div>
-              </article>
-            </div>
+            <section class="container-images-home">
+                <img src="./source/img/screenShots/historico.png" alt="historico de ocorrencias" />
+                <img src="./source/img/screenShots/dashboard.png" alt="painel de gestão" />
+                <img src="./source/img/screenShots/sistemaPesquisa.png" alt="pesquisa" />
             </section>
-          </section>
         </section>
-      </section>
 
-      <section id="precos" class="hidden">
-        <h2>Planos</h2>
+        <section id="beneficios" class="hidden">
+            <div class="beneficios-descricao">
+                <div>
+                    <h2>Por que transformar sua gestão com o IntegraCAT?</h2>
+                    <p>
+                        Deixe os processos manuais no passado e traga a segurança da sua equipe para a era digital.
+                    </p>
+                </div>
 
-        <section class="container-card-precos">
-          <div class="card-precos">
-            <h3>Plano Essencial</h3>
-            <h3>R$ 297,00 /mês</h3>
-            <p>Ideal para pequenas empresas dando o primeiro passo na segurança digital.</p>
-            <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">TESTAR GRÁTIS</button></a>
-            <ul>
-              <li>Até 50 colaboradores;</li>
-              <li>Relatos de riscos via App;</li>
-              <li>Dashboard de gestão básico;</li>
-              <li>Histórico de ocorrências (3 meses).</li>
-            </ul>
-          </div>
+                <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
+            </div>
 
-          <div class="card-precos">
-            <h3>Plano Profissional</h3>
-            <h3>R$ 797,00 /mês</h3>
-            <p> A solução completa para organizar o SESMT e focar na prevenção ativa.</p>
-            <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONTRATAR</button></a>
-            <ul>
-              <li>Até 200 colaboradores;</li>
-              <li>Tudo do plano Essencial;</li>
-              <li>Relatórios avançados para CAT;</li>
-              <li>Acesso ao Hub de Especialistas (Palestras).</li>
-            </ul>
-          </div>
+            <section class="container-card-beneficios">
+                <div class="card-beneficios">
+                    <div class="card-beneficios-title">
+                        <img src="./source/img/icons/bell_icon.svg" alt="alerta" />
+                        <h3>Alertas em Tempo Real</h3>
+                    </div>
+                    <p>
+                        O relato sai da operação direto para o seu painel no mesmo instante, permitindo ações imediatas antes que o risco vire um acidente.
+                    </p>
+                    <img src="./source/img/screenShots/notification1.png" alt="notificação" />
+                </div>
 
-          <div class="card-precos">
-            <h3>Plano Enterprise</h3>
-            <h3>Preço Sob Consulta</h3>
-            <p>Para grandes operações que exigem customização máxima e integração.</p>
-            <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">SOLICITAR DEMONSTRAÇÃO</button></a>
-            <ul>
-              <li>Usuários ilimitados;</li>
-              <li>Tudo do plano Profissional;</li>
-              <li>Integração com ERP e eSocial;</li>
-              <li>Personalização do App com a sua marca.</li>
-            </ul>
-          </div>
+                <div class="card-beneficios">
+                    <div class="card-beneficios-title">
+                        <img src="./source/img/icons/graph_icon.svg" alt="gráfico" />
+                        <h3>Gestão Centralizada</h3>
+                    </div>
+                    <p>
+                        Diga adeus ao papel. Tenha todas as ocorrências, métricas e mapeamento de riscos organizados em um único dashboard inteligente.
+                    </p>
+                    <img src="./source/img/screenShots/graphs1.png" alt="painel" />
+                </div>
+
+                <div class="card-beneficios">
+                    <div class="card-beneficios-title">
+                        <img src="./source/img/icons/shield_icon.svg" alt="escudo" />
+                        <h3>Segurança Jurídica</h3>
+                    </div>
+                    <p>
+                        Mantenha a conformidade legal da sua empresa em dia. Evite multas e processos com registros padronizados e acesso rápido a todo o histórico.
+                    </p>
+                    <img src="./source/img/screenShots/security1.png" alt="segurança e proteção" />
+                </div>
+            </section>
         </section>
-      </section>
 
-      <section id="leads" class="hidden">
-        <h2>Pronto para modernizar a sua gestão de segurança?</h2>
-
-        <form class="form-leads" action="" >
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nome">Nome:</label>
-              <input
-                type="text"
-                name="user_nome"
-                id="nome"
-                required
-                placeholder="Digite seu nome aqui..."
-              />
+        <section id="sistema" class="hidden">
+            <div class="visao-sistemas">
+                <section class="informacao-sistemas">
+                    <h2>Painel Corporativo</h2>
+                    <p>
+                        Acompanhe métricas em tempo real, gerencie ocorrências com agilidade, visualize o status de cada setor e tome decisões rápidas antes que os riscos virem acidentes.
+                    </p>
+                    <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONHEÇA JÁ</button></a>
+                </section>
+                <img src="./source/img/Screenshot-MacBook Pro (16inch).png" alt="painel corporativo no Notebook" class="img-mockup-dash" />
             </div>
 
-            <div class="form-group">
-              <label for="email">E-mail corporativo:</label>
-              <input type="email" name="user_email" id="email" placeholder="Digite seu e-mail aqui..." required />
+            <div class="visao-sistemas">
+                <img src="./source/img/Screenshot-iPhone15 Pro Max.png" alt="aplicativo de alerta no celular" class="img-mockup-app" />
+                <section class="informacao-sistemas">
+                    <h2>Alerta Rápido na Palma da Mão</h2>
+                    <div>
+                        <p>
+                            Dê voz à sua equipe com um aplicativo intuitivo que conecta o problema direto à gestão. Qualquer colaborador pode reportar riscos e enviar fotos do local direto do smartphone, em poucos segundos.
+                        </p>
+                        <button class="btn-green" aria-label="Solicitar demonstração do aplicativo">SOLICITAR DEMO</button>
+                    </div>
+                </section>
             </div>
-          </div>
+        </section>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="telefone">Telefone / Whatsapp:</label>
-              <input type="tel" name="user_telefone" id="telefone" placeholder="Digite seu telefone aqui..." />
-            </div>
+        <section id="palestras" class="hidden">
+            <h2>Conectando sua CIPA aos melhores especialistas do mercado</h2>
 
-            <div class="form-group">
-              <label for="empresa">Empresa:</label>
-              <input type="text" name="user_empresa" id="empresa" placeholder="Digite o nome da empresa aqui..." />
-            </div>
-          </div>
+            <section class="container-especialistas" class="hidden">
+                <article class="card-destaque" id="especialista-destaque">
+                    <div>
+                        <img class="img-perfil" src="./source/img/people/DraMariana.png" alt="perfil" />
+                        <div>
+                            <h4>Dra. Mariana Costa</h4>
+                            <p>Médica do Trabalho e Ergonomista</p>
+                            <div class="container-estrelas">
+                                <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Foco na saúde postural e redução de afastamentos por LER/DORT. Realizo blitz ergonômica nos postos e palestras interativas ensinando ginástica laboral, ajustes de cadeira/monitor e cuidados com o corpo.
+                    </p>
+                    <button class="btn-green" aria-label="é possível agendar palestra com especialista">AGENDAR PALESTRA</button>
+                </article>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="cargo">Cargo:</label>
-              <input type="text" name="user_cargo" id="cargo" placeholder="Digite seu cargo aqui..."/>
-            </div>
+                <div class="grid-especialistas">
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Engenheiro com mais de 10 anos de experiência em adequação de maquinário e prevenção de riscos em ambientes industriais. Realiza laudos técnicos, inspeções detalhadas e treinamentos de NR-12 para garantir uma operação 100% segura e em conformidade.">
+                        <div>
+                            <img class="img-perfil" src="source/img/people/Jose.png" alt="perfil" />
+                            <div>
+                                <h4>José Junior</h4>
+                                <p>Engenheiro de Segurança</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Doutor em Biomecânica Ocupacional, atua mapeando riscos físicos no ambiente de trabalho. Desenvolve projetos ergonômicos sob medida para escritórios e fábricas, visando aumentar a produtividade e eliminar dores e lesões ocupacionais da equipe.">
+                        <div>
+                            <img class="img-perfil" src="source/img/people/DrRoberto.png" alt="perfil" />
+                            <div>
+                                <h4>Dr. Roberto</h4>
+                                <p>Especialista em Ergonomia</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Especialista em Saúde Mental no Trabalho. Atua na prevenção da Síndrome de Burnout, gestão de estresse e inteligência emocional para líderes e colaboradores. Oferece workshops dinâmicos para criar um ambiente corporativo mais acolhedor e psicologicamente seguro.">
+                        <div>
+                            <img class="img-perfil" src="./source/img/people/AnaLucia.png" alt="perfil" />
+                            <div>
+                                <h4>Ana Lúcia</h4>
+                                <p>Psicóloga Organizacional</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Focado na linha de frente da segurança do trabalho. Possui vasta experiência em treinamentos de NR-35 (Trabalho em Altura) e NR-33 (Espaço Confinado). Conduz diálogos diários de segurança (DDS) práticos e engajadores para conscientizar a equipe operacional.">
+                        <div>
+                            <img class="img-perfil" src="./source/img/people/GustavoKoler.jpg" alt="perfil" />
+                            <div>
+                                <h4>Gustavo Koler</h4>
+                                <p>Técnico de Segurança</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Fisioterapeuta focada na reabilitação e prevenção de Lesões por Esforço Repetitivo. Implementa programas contínuos de ginástica laboral, além de realizar avaliações ergonômicas individuais para zerar o índice de afastamentos médicos no setor administrativo.">
+                        <div>
+                            <img class="img-perfil" src="source/img/people/JuliaSilva.jpg" alt="perfil" />
+                            <div>
+                                <h4>Júlia Silva</h4>
+                                <p>Especialista em LER/DORT</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-menor clicavel" onclick="trocarDestaque(this)" data-descricao="Especialista em Compliance Trabalhista e Previdenciário. Orienta empresas sobre os impactos legais de acidentes de trabalho e doenças ocupacionais, defesa em fiscalizações, gestão de afastamentos (INSS) e como a digitalização ajuda a evitar multas no eSocial.">
+                        <div>
+                            <img class="img-perfil" src="source/img/people/PauloJusto.png" alt="perfil" />
+                            <div>
+                                <h4>Paulo Justo</h4>
+                                <p>Advogado Trabalhista</p>
+                                <div class="container-estrelas">
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                    <img class="estrela" src="./source/img/icons/scoreStar.svg" alt="estrela" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            <div class="form-group">
-              <label for="num_func">Número de funcionários:</label>
-              <input
-                type="number"
-                name="user_numeroFuncionarios"
-                id="num_func"
-                placeholder="Digite a quantidade de funcionários"
-              />
-            </div>
-          </div>
+            <section id="conteudos" class="hidden">
+                <h2>Conteúdos que blindam a sua operação</h2>
+                <section class="container-card-conteudos">
+                    <article class="card-conteudo">
+                        <img src="./source/img/content/saudeOcupacional.png" alt="imagem do conteudo" />
+                        <div>
+                            <div class="card-conteudo__texts">
+                                <h3>eSocial e Saúde Ocupacional</h3>
+                                <h4>SST em dia, zero multas</h4>
+                                <p>
+                                    Entenda as principais exigências do eSocial para a Segurança do Trabalho e como a digitalização ajuda a evitar passivos trabalhistas pesados.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <section class="container-card-conteudos__menores">
+                        <div class="articles">
+                            <article class="card-conteudo">
+                                <img src="./source/img/content/tecnologiaOperacao.png" alt="capa do artigo" />
+                                <div class="card-conteudo__texts">
+                                    <h4>A Tecnologia a Favor da Vida na Operação</h4>
+                                    <p>Como dados em tempo real reduzem acidentes em até 40%.</p>
+                                </div>
+                            </article>
+                            <article class="card-conteudo">
+                                <img src="./source/img/content/saudeMental.png" alt="capa do artigo" />
+                                <div class="card-conteudo__texts">
+                                    <h4>Muito Além do Capacete: A Saúde Mental no Trabalho</h4>
+                                    <p>
+                                        Estratégias práticas para combater o Burnout na sua equipe.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
 
-          <div class="form-row">
-            <div class="checkbox-group">
-              <input
-                type="checkbox"
-                name="privacidade"
-                id="privacidade"
-                required
-              />
-              <label for="privacidade">
+        <section id="precos" class="hidden">
+            <h2>Planos</h2>
+
+            <section class="container-card-precos">
+                <div class="card-precos">
+                    <h3>Plano Essencial</h3>
+                    <h3>R$ 297,00 /mês</h3>
+                    <p>Ideal para pequenas empresas dando o primeiro passo na segurança digital.</p>
+                    <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">TESTAR GRÁTIS</button></a>
+                    <ul>
+                        <li>Até 50 colaboradores;</li>
+                        <li>Relatos de riscos via App;</li>
+                        <li>Dashboard de gestão básico;</li>
+                        <li>Histórico de ocorrências (3 meses).</li>
+                    </ul>
+                </div>
+
+                <div class="card-precos">
+                    <h3>Plano Profissional</h3>
+                    <h3>R$ 797,00 /mês</h3>
+                    <p> A solução completa para organizar o SESMT e focar na prevenção ativa.</p>
+                    <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">CONTRATAR</button></a>
+                    <ul>
+                        <li>Até 200 colaboradores;</li>
+                        <li>Tudo do plano Essencial;</li>
+                        <li>Relatórios avançados para CAT;</li>
+                        <li>Acesso ao Hub de Especialistas (Palestras).</li>
+                    </ul>
+                </div>
+
+                <div class="card-precos">
+                    <h3>Plano Enterprise</h3>
+                    <h3>Preço Sob Consulta</h3>
+                    <p>Para grandes operações que exigem customização máxima e integração.</p>
+                    <a href="#leads"><button class="btn-green" aria-label="Ir para formulário">SOLICITAR DEMONSTRAÇÃO</button></a>
+                    <ul>
+                        <li>Usuários ilimitados;</li>
+                        <li>Tudo do plano Profissional;</li>
+                        <li>Integração com ERP e eSocial;</li>
+                        <li>Personalização do App com a sua marca.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section id="leads" class="hidden">
+            <h2>Pronto para modernizar a sua gestão de segurança?</h2>
+
+            <form class="form-leads" action="">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="user_nome" id="nome" required placeholder="Digite seu nome aqui..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail corporativo:</label>
+                        <input type="email" name="user_email" id="email" placeholder="Digite seu e-mail aqui..." required />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefone">Telefone / Whatsapp:</label>
+                        <input type="tel" name="user_telefone" id="telefone" placeholder="Digite seu telefone aqui..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" name="user_empresa" id="empresa" placeholder="Digite o nome da empresa aqui..." />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" name="user_cargo" id="cargo" placeholder="Digite seu cargo aqui..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="num_func">Número de funcionários:</label>
+                        <input type="number" name="user_numeroFuncionarios" id="num_func" placeholder="Digite a quantidade de funcionários" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="privacidade" id="privacidade" required />
+                        <label for="privacidade">
                 Concordo em receber comunicações e aceito a Política de
                 Privacidade
               </label>
-            </div>
+                    </div>
 
-            <button class="btn-green">SOLICITAR DEMONSTRAÇÃO</button>
-          </div>
-        </form>
-      </section>
+                    <button class="btn-green">SOLICITAR DEMONSTRAÇÃO</button>
+                </div>
+            </form>
+        </section>
     </main>
 
-    <app-footer></app-footer>    
-    
+    <app-footer></app-footer>
+
     <!-- API VLibras -->
     <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
     <script src="./source/js/scroll-reveal.js"></script>
     <script src="./source/js/components/footer.js" defer></script>
     <script src="./source/js/header.js"></script>
-  </body>
+    <script src="./source/js/trocaEspecialista.js"></script>
+</body>
+
 </html>

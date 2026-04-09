@@ -290,6 +290,29 @@ Daqui para baixo classes da seção PALESTRAS
 }
 
 
+/* Animação de troca de especialistas */
+
+.card-menor.clicavel {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+}
+
+.card-menor.clicavel:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animar-troca {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+#especialista-destaque,
+.card-menor {
+    transition: all 0.3s ease-in-out;
+}
+
+
 /*========================================
 Daqui para baixo classes da seção CONTEUDOS que está dentro da seção PALESTRAS
 ==========================================*/
@@ -477,13 +500,13 @@ ANIMAÇÕES
     /* serve só pro JavaScript achar a section */
 }
 
-.hidden > * {
+.hidden>* {
     opacity: 0;
     transform: translateY(-40px);
     transition: all 0.8s ease-out;
 }
 
-.hidden.mostrar > * {
+.hidden.mostrar>* {
     opacity: 1;
     transform: translateY(0);
 }
