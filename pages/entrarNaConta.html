@@ -27,28 +27,34 @@
     <title>Login - IntegraCAT</title>
   </head>
   <body>
+     
     <header>
       <nav class="header-nav">
-        <a href="../index.html">
-          <img
-            class="voltar-seta"
-            src="../source/img/icons/backArrow1.svg"
-            alt="voltar"
-          />
-        </a>
-
-        <a href="../index.html">
         <div class="title-logo">
-          <img
-            src="../source/img/logo integraCAT-nolet.svg"
-            alt="logo - IntegraCAT"
-          />
+          <a href="../index.html">
+            <img
+              class="voltar-seta"
+              src="../source/img/icons/backArrow1.svg"
+              alt="voltar"
+            />
+          </a>
           <img class="lettering-logo"
             src="../source/img/lettering integraCAT.svg"
             alt="letreiro - IntegraCAT"
           />
         </div>
-        </a>
+        <button class="menu" aria-label="Abrir menu">
+          <img src="../source/img/icons/menu.svg" alt="menu" width="30px">
+        </button>
+        <ul>
+          <li><a href="#beneficios" class="header-link">BENEFÍCIOS</a></li>
+          <li><a href="#sistema" class="header-link">SISTEMA</a></li>
+          <li><a href="#palestras" class="header-link">PALESTRAS</a></li>
+          <li><a href="#precos" class="header-link">PREÇOS</a></li>
+          <li><a href="#leads" class="header-link">CADASTRAR</a></li>
+          <li><a class="btn-green btn-mobile" href="./pages/entrarNaConta.html">ENTRAR</a></li>
+        </ul>
+        <a id="btn-entrar-conta" class="btn-green btn-desktop" href="./pages/entrarNaConta.html">ENTRAR</a>
       </nav>
     </header>
 
@@ -68,7 +74,7 @@
             <a href="">Esqueci minha senha</a>
             <p>
               Ou, caso não tenha conta:
-              <a href="../pages/registrarOpcoes.html">Registrar Conta</a>
+              <a href="#" id="btn-abrir-registro">Registrar Conta</a>
             </p>
           </div>
 
@@ -79,10 +85,31 @@
       </section>
     </main>
    
+    <!-- Modal registrar conta -->
+     <dialog id="modal-registro" class="modal">
+      <section id="conteiner-opcoes">
+        <button id="btn-fechar-registro" class="btn-fechar" aria-label="Fechar">✖</button>
+
+        <h1>Registrar conta</h1>
+        
+        <div class="container-btn">
+          <a class="btn-purple" href="../pages/registrarUser.html">Registrar Usuário</a>
+        </div>
+        
+        <p>ou, caso seja uma empresa</p>
+        
+        <div class="container-btn">
+          <a class="btn-purple" href="../pages/registrarEmpresa.html">Registrar Empresa</a>
+        </div>
+      </section>
+    </dialog>
+
     <app-footer></app-footer>
     
     <script src="../source/js/components/footer.js" defer></script>
     <script src="../source/js/loginConta.js"></script>
+    <script src="../source/js/modal.js" defer></script>
+    <script src="../source/js/header.js" defer></script>
 
     <!-- API VLibras -->
     <div vw class="enabled">

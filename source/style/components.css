@@ -83,6 +83,18 @@ header {
     width: 36px;
 }
 
+/* Modal */
+.modal{
+    max-width: 500px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: auto;
+}
+.modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+}
 
 /*========================================
 Daqui para baixo classes do FOOTER
@@ -348,5 +360,7 @@ RESPONSIVIDADE
     .voltar-seta {
         width: 30px;
     }
-    
+    .modal{
+        max-width: 80%;
+    }
 }

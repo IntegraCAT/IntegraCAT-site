@@ -31,28 +31,34 @@
     <title>Registrar Usuário - IntegraCAT</title>
   </head>
   <body>
+    
     <header>
       <nav class="header-nav">
-        <a href="../pages/registrarOpcoes.html">
-          <img
-            class="voltar-seta"
-            src="../source/img/icons/backArrow1.svg"
-            alt="voltar"
-          />
-        </a>
-
-        <a href="../index.html">
-          <div class="title-logo">
-          <img
-            src="../source/img/logo integraCAT-nolet.svg"
-            alt="logo - IntegraCAT"
-          />
+        <div class="title-logo">
+          <a href="./entrarNaConta.html">
+            <img
+              class="voltar-seta"
+              src="../source/img/icons/backArrow1.svg"
+              alt="voltar"
+            />
+          </a>
           <img class="lettering-logo"
             src="../source/img/lettering integraCAT.svg"
             alt="letreiro - IntegraCAT"
           />
         </div>
-        </a>
+        <button class="menu" aria-label="Abrir menu">
+          <img src="../source/img/icons/menu.svg" alt="menu" width="30px">
+        </button>
+        <ul>
+          <li><a href="#beneficios" class="header-link">BENEFÍCIOS</a></li>
+          <li><a href="#sistema" class="header-link">SISTEMA</a></li>
+          <li><a href="#palestras" class="header-link">PALESTRAS</a></li>
+          <li><a href="#precos" class="header-link">PREÇOS</a></li>
+          <li><a href="#leads" class="header-link">CADASTRAR</a></li>
+          <li><a class="btn-green btn-mobile" href="./pages/entrarNaConta.html">ENTRAR</a></li>
+        </ul>
+        <a id="btn-entrar-conta" class="btn-green btn-desktop" href="./pages/entrarNaConta.html">ENTRAR</a>
       </nav>
     </header>
 
@@ -117,6 +123,7 @@
    
     <script src="../source/js/registrarUsuario.js"></script>
     <script src="../source/js/components/footer.js" defer></script>
+    <script src="../source/js/header.js"></script>
 
     <!-- API VLibras -->
     <div vw class="enabled">
