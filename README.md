@@ -25,6 +25,9 @@ Modernizar, centralizar e desburocratizar a gestão de Segurança do Trabalho e 
 
 A entrega atual foca no painel web da gestão, garantindo a visualização clara dos dados e o registro de ocorrências:
 
+### 🌐 Landing Page Institucional
+- Apresentação do Produto: Uma página inicial responsiva e atraente criada para apresentar a solução B2B às empresas, destacando os benefícios do sistema e focada em conversão e usabilidade (UI/UX).
+
 ### 📊 Dashboard Interativo (Gestão de KPIs)
 - **Métricas Principais:** Acompanhamento em tempo real de "Dias sem Acidentes", "Nível de Risco Atual", "Treinamentos Vencendo" e "Alertas Recebidos".
 - **Visualização de Dados:** Gráficos interativos mostrando o volume de ocorrências segmentado por setor e a evolução dos alertas nos últimos meses.
