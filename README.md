@@ -21,26 +21,39 @@ Acesse aqui: <a href="https://integracat.github.io/IntegraCAT-site/">https://int
 ## 🎯 Objetivo Geral
 Modernizar, centralizar e desburocratizar a gestão de Segurança do Trabalho e o registro de CATs (Comunicação de Acidente de Trabalho), transformando dados operacionais em inteligência preventiva para proteger vidas e garantir a conformidade jurídica das empresas.
 
-## 🚀 Objetivos Específicos
-* **Gestão baseada em dados:** Fornecer aos gestores um Dashboard em tempo real com métricas claras (KPIs) para tomada de decisão rápida.
-* **Digitalizar o chão de fábrica:** Dar voz aos colaboradores através de um aplicativo móvel intuitivo para reporte instantâneo de riscos e quase-acidentes.
-* **Redução de passivos trabalhistas:** Garantir que a empresa mantenha o *compliance* com as normas do eSocial e da legislação trabalhista brasileira de forma automatizada.
-* **Conexão com especialistas:** Criar uma ponte entre as CIPAs corporativas e os melhores profissionais do mercado (Ergonomistas, Engenheiros de Segurança e Psicólogos Organizacionais) para treinamentos e palestras.
+## 🚀 Funcionalidades da Versão 1.0 (MVP)
+
+A entrega atual foca no painel web da gestão, garantindo a visualização clara dos dados e o registro de ocorrências:
+
+### 📊 Dashboard Interativo (Gestão de KPIs)
+- **Métricas Principais:** Acompanhamento em tempo real de "Dias sem Acidentes", "Nível de Risco Atual", "Treinamentos Vencendo" e "Alertas Recebidos".
+- **Visualização de Dados:** Gráficos interativos mostrando o volume de ocorrências segmentado por setor e a evolução dos alertas nos últimos meses.
+
+### 📝 Gestão de Ocorrências
+- **Tabela Dinâmica:** Visão geral dos alertas recentes para triagem rápida.
+- **Histórico:** Aba dedicada para consultar o histórico completo de ocorrências da empresa.
+- **Registro Detalhado:** Formulário para criar novas ocorrências com todos os detalhes necessários para documentação.
+
+### 🧠 Hub de Especialistas e Educação
+- **Agendamento:** Aba dedicada para conectar a empresa a especialistas e agendar palestras focadas em Saúde e Segurança.
+- **Conteúdos:** Repositório de artigos técnicos e atualizações sobre o setor.
 
 ---
 
-## ⚙️ Funcionalidades Principais
+## 🛠️ Tecnologias Utilizadas
+- **HTML5:** Estruturação semântica da plataforma.
+- **CSS3:** Estilização, layout responsivo e design focado em UI/UX.
+- **JavaScript:** Lógica de manipulação do DOM, interatividade dos gráficos e funcionamento dinâmico dos dashboards.
+- **Figma:** Prototipagem de alta fidelidade e concepção visual prévia.
 
-### 💻 Para a Gestão (Web Dashboard)
-* **Painel Corporativo de KPIs:** Acompanhamento de "Dias sem Acidentes", "Nível de Risco Atual" e "Alertas Recebidos Hoje".
-* **Visualização de Dados:** Gráficos interativos detalhando o histórico de ocorrências por setor e gravidade.
-* **Gestão Centralizada de Ocorrências:** Tabela dinâmica de triagem, permitindo alterar o status de cada alerta (Pendente, Em Análise, Resolvido).
-* **Hub de Especialistas e Conteúdo:** Área dedicada para agendamento de palestras e acesso a artigos de atualização técnica sobre Saúde Ocupacional e eSocial.
+---
 
-### 📱 Para o Colaborador (Mobile)
-* **Alerta Rápido na Palma da Mão:** Interface simplificada para reportar riscos estruturais, comportamentais ou incidentes direto do smartphone.
-* **Upload de Evidências:** Anexo de fotos em tempo real do local ou do problema reportado.
-* **Acompanhamento de Status:** Feedback visual de que o alerta foi enviado e recebido pela gestão com sucesso.
+## 🔮 Próximos Passos (Backlog do Produto)
+Como a plataforma foi pensada para ser um ecossistema completo, as próximas *features* mapeadas para o desenvolvimento futuro incluem:
+
+- [ ] **Aplicativo Mobile:** Interface simplificada para o colaborador reportar riscos de forma anônima ou identificada direto do smartphone.
+- [ ] **Upload de Evidências:** Permitir anexo de fotos em tempo real do local ou problema reportado.
+- [ ] **Automação de Compliance (eSocial):** Integração para automatizar a geração de CATs e garantir a conformidade jurídica com as leis trabalhistas brasileiras.
 
 ## 👥 Nossa Equipe
 
